@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1584205420 source:d:\github\duzenli\friend-operator\stream-arrayoperations\main.cpp
+	<iostream>
+
+1687269770 source:d:\github\duzenli\friend-operator\stream-arrayoperations\src\array.cpp
+	"array.h"
+	<iostream>
+	<cstdlib>
+	<cassert>
+	<iomanip>
+
+1687269729 d:\github\duzenli\friend-operator\stream-arrayoperations\include\array.h
+	<iostream>
+
