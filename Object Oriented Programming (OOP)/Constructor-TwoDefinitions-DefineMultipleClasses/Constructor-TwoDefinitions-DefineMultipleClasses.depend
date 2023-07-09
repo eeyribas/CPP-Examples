@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1688895464 source:d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\constructor-twodefinitions-definemultipleclasses\main.cpp
+	<iostream>
+	<conio.h>
+

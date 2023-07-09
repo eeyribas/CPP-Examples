@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1688902707 source:d:\backup\github calismalar\c++-programming-examples\simpleexamples\areacalculationwithrandomnumbers\main.cpp
+	<iostream>
+	<conio.h>
+	<time.h>
+
