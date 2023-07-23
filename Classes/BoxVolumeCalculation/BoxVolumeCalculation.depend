@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1690123704 source:d:\backup\github calismalar\c++-programming-examples\simpleexamples\boxvolumecalculation\main.cpp
+	<iostream>
+	<conio.h>
+
