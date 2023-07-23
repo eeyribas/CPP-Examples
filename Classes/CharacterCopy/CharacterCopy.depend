@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1690038696 source:d:\backup\github calismalar\c++-programming-examples\classes\charactercopy\src\sample.cpp
+	"sample.h"
+
+1690038638 d:\backup\github calismalar\c++-programming-examples\classes\charactercopy\include\sample.h
+	<iostream>
+	<conio.h>
+	<cstring>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1689755587 source:d:\codes\github calismalar\c++-programming-examples\classes\squarecalculation\src\square.cpp
+	"square.h"
+
+1689755512 d:\codes\github calismalar\c++-programming-examples\classes\squarecalculation\include\square.h
+	<iostream>
+
