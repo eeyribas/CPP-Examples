@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1690317470 source:d:\backup\github calismalar\c++-programming-examples\standartlibrary\map-findthepair\main.cpp
+	<iostream>
+	<conio.h>
+	<map>
+
