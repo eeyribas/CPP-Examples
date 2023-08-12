@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1584205420 source:d:\backup\github calismalar\c++-programming-examples\classes\usethis-time\main.cpp
+	<iostream>
+
+1691440018 source:d:\backup\github calismalar\c++-programming-examples\classes\usethis-time\src\time.cpp
+	"time.h"
+
+1691439597 d:\backup\github calismalar\c++-programming-examples\classes\usethis-time\include\time.h
+	<iostream>
+

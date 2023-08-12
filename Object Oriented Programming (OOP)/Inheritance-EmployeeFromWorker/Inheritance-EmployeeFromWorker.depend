@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1584205420 source:d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-employeefromworker\main.cpp
+	<iostream>
+
+1691433966 source:d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-employeefromworker\src\worker.cpp
+	"worker.h"
+	<cstring>
+	<cassert>
+
+1691433807 d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-employeefromworker\include\worker.h
+	<iostream>
+
+1691434370 source:d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-employeefromworker\src\employee.cpp
+	"employee.h"
+	<iomanip>
+
+1691434113 d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-employeefromworker\include\employee.h
+	"worker.h"
+	<iostream>
+
