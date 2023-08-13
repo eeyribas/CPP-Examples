@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 		cout << ":";
 		cin >> str;
 		out << str << endl;
-	}while(*str != '$');
+	} while(*str != '$');
 	out.close();
 
 	getch();

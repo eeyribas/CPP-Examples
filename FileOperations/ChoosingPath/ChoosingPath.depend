@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1688924888 source:d:\backup\github\cplusplus-programming-examples--array-structs-loops-etc\fileoperations\choosingpath\main.cpp
+	<iostream>
+	<conio.h>
+	<fstream>
+

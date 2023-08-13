@@ -8,10 +8,9 @@ istream &FindAlpha(istream &stream)
 {
 	char ch;
 
-	do
-    {
+	do{
 		stream.get(ch);
-	}while(!isalpha(ch));
+	} while(!isalpha(ch));
 
 	return stream;
 }

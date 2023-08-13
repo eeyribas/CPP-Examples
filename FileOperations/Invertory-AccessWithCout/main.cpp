@@ -14,8 +14,7 @@ class Invertory
 	double cost;
 
 public:
-	Invertory(char *i, int o, double d)
-	{
+	Invertory(char *i, int o, double d){
 		strcpy(item, i);
 		on_hand = o;
 		cost = d;
@@ -32,6 +31,7 @@ ostream &operator<<(ostream &stream, Invertory obj)
 {
 	stream << obj.item << " : " << obj.on_hand;
 	stream << " on hand $ = " << obj.cost << "\n";
+
 	return stream;
 }
 
@@ -71,8 +71,7 @@ int main()
 	Invertory wrenches("wrenches", 22, 13.9);
 	Invertory temp(" ", 0, 0.0);
 
-	if(!inv)
-    {
+	if(!inv){
 		cout << "Not found.\n";
 		return 1;
 	}
@@ -83,14 +82,12 @@ int main()
 	inv.close();
 
 	inv.open("inv", ios::in | ios::binary);
-	if(!inv)
-    {
+	if(!inv){
 		cout << "Not found.\n";
 		return 1;
 	}
 
-	do
-    {
+	do{
 		cout << "Record = # (-1 to quit) = ";
 		cin >> i;
 		if(i == -1)
@@ -98,7 +95,7 @@ int main()
 		inv.seekg(i * (SIZE + sizeof(int) + sizeof(double)), ios::beg);
 		temp.Retrieve(inv);
 		cout << temp;
-	}while(inv.good());
+	} while(inv.good());
 
 	inv.close();
 

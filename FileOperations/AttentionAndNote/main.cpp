@@ -8,20 +8,21 @@ using namespace std;
 ostream &Atn(ostream &stream)
 {
 	stream << "Attention = ";
+
 	return stream;
 }
 
 ostream &Note(ostream &stream)
 {
 	stream << "Please Note = ";
+
 	return stream;
 }
 
 int main()
 {
 	ofstream out("test");
-	if(!out)
-    {
+	if(!out){
 		cout << "Not find file.\n";
 		return 1;
 	}

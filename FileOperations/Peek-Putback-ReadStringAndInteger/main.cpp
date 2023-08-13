@@ -23,27 +23,27 @@ int main()
 		cout << "Not Found.\n";
 		return 1;
 	}
-	do {
+
+	do{
 		p = str;
 		ch = in.peek();
 		if(isdigit(ch)) {
 			while(isdigit(*p = in.get()))
                 p++;
 			in.putback(*p);
-			*p='/0';
+			*p = '/0';
 			cout << "Integer = " << atoi(str);
-		}
-		else if(isalpha(ch)){
+		} else if(isalpha(ch)){
 			while(isalpha(*p=in.get()))
                 p++;
 			in.putback(*p);
 			*p = '/0';
 			cout << "String = " << str;
+		} else{
+		    in.get();
 		}
-		else
-			in.get();
 		cout << "\n";
-	}while(!in.eof());
+	} while(!in.eof());
 
 	in.close();
 
