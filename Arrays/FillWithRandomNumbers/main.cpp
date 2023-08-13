@@ -10,7 +10,7 @@ int main()
 	srand(time(NULL));
 
 	for(int i = 0; i < 10; i++)
-		arr[i] = rand() % 11 -5;
+		arr[i] = rand() % 11 - 5;
 	cout << "A array = {";
 
 	for(int j = 0; j < 10; j++){

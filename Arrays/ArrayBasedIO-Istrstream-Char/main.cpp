@@ -6,7 +6,7 @@ using namespace std;
 
 int main()
 {
-	char buf[]="hello 100 123.2";
+	char buf[] = "hello 100 123.2";
 	istrstream istr(buf);
 	char c;
 

@@ -12,8 +12,7 @@ class Array
 public:
 	Array(int num);
 
-	~Array()
-	{
+	~Array(){
 		delete [] p;
 	}
 
@@ -37,6 +36,7 @@ char &Array::Put(int i)
 		cout << "Limited Error\n";
 		exit(1);
 	}
+
 	return p[i];
 }
 
@@ -46,6 +46,7 @@ char Array::Get(int i)
 		cout << "Limited Error\n";
 		exit(1);
 	}
+
 	return p[i];
 }
 

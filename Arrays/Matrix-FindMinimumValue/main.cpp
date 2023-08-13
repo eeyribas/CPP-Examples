@@ -11,26 +11,28 @@ using namespace std;
 void Init(int m[ROWS][COLUMN])
 {
 	srand(time(NULL));
-	for(int i = 0; i < ROWS; i++)
+	for(int i = 0; i < ROWS; i++){
         for(int j = 0; j < COLUMN; j++)
             m[i][j] = rand() % 10;
+	}
 }
 
 int Minimum(int m[ROWS][COLUMN])
 {
 	int minim = m[0][0];
-	for(int i = 0; i < ROWS; i++)
-		for(int j = 0; j < COLUMN; j++)
-			if(m[i][j] < minim)
+	for(int i = 0; i < ROWS; i++){
+        for(int j = 0; j < COLUMN; j++){
+            if(m[i][j] < minim)
 				minim = m[i][j];
+        }
+	}
 
 	return minim;
 }
 
 void Print(int m[ROWS][COLUMN], int minim)
 {
-	for(int i = 0; i < ROWS; i++)
-    {
+	for(int i = 0; i < ROWS; i++){
 		for(int j = 0; j < COLUMN; j++)
 			cout << m[i][j] << " \t ";
 		cout << endl;

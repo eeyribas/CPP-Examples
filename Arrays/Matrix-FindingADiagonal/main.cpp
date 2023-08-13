@@ -9,19 +9,19 @@ using namespace std;
 
 int main()
 {
-	int matA[ROWS][COLUMN] ;
+	int mat[ROWS][COLUMN] ;
 	int d[ROWS];
 
 	srand(time(NULL));
-	for(int i = 0; i < ROWS; i++)
-		for(int j = 0; j < COLUMN; j++)
-			matA[i][j] = rand() % 10;
+	for(int i = 0; i < ROWS; i++){
+        for(int j = 0; j < COLUMN; j++)
+			mat[i][j] = rand() % 10;
+	}
 
 	cout << "------A matrix-------" << endl;
-	for(int i = 0; i < ROWS; i++)
-	{
+	for(int i = 0; i < ROWS; i++){
 		for(int j = 0; j < COLUMN; j++)
-			cout << matA[i][j] << "\t";
+			cout << mat[i][j] << "\t";
 		cout << endl;
 	}
 
@@ -30,7 +30,7 @@ int main()
 	cin >> row;
 
 	for(int i = 0; i < COLUMN; i++)
-		d[i] = matA[row - 1][i];
+		d[i] = mat[row - 1][i];
 
 	cout << "----Rows-----" << endl;
 	for(int i = 0; i < ROWS; i++)

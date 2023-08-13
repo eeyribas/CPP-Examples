@@ -13,33 +13,33 @@ int main()
 	int c[ROWS][COLUMN];
 
 	cout << "---------A matrix--------" << endl;
-	for(int i = 0; i < ROWS; i++)
-    {
+	for(int i = 0; i < ROWS; i++){
 		for(int j = 0; j < COLUMN; j++)
             cout << a[i][j] << "\t";
 		cout << endl;
 	}
 
 	cout << "\n\n----------B matrix----------" << endl;
-	for(int i = 0; i < ROWS; i++)
-    {
+	for(int i = 0; i < ROWS; i++){
         for(int j = 0; j < COLUMN; j++)
             cout << b[i][j] << '\t';
         cout << endl;
 	}
 
-	for(int i = 0; i < ROWS; i++)
-		for(int j = 0; j < COLUMN; j++)
+	for(int i = 0; i < ROWS; i++){
+        for(int j = 0; j < COLUMN; j++)
 			c[i][j] = 0;
+	}
 
-	for(int i = 0; i < ROWS; i++)
-		for(int j = 0; j < COLUMN; j++)
-			for(int k = 0; k < ROWS; k++)
+	for(int i = 0; i < ROWS; i++){
+        for(int j = 0; j < COLUMN; j++){
+            for(int k = 0; k < ROWS; k++)
                 c[i][j] += a[i][k] * b[k][j];
+        }
+	}
 
 	cout << "\n\n--------------C matrix----------" << endl;
-	for(int i = 0; i < ROWS; i++)
-    {
+	for(int i = 0; i < ROWS; i++){
 		for(int j = 0; j < COLUMN; j++)
 			cout << c[i][j] << '\t';
 		cout << endl;

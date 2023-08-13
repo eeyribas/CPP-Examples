@@ -8,20 +8,18 @@ class Letters
 	char ch;
 
 public:
-	Letters(char c)
-	{
+	Letters(char c){
 		ch = c;
 	}
 
-	char GetCh()
-	{
+	char GetCh(){
 		return ch;
 	}
 };
 
 int main()
 {
-    Letters ob[10]={Letters('a'), Letters('b'),
+    Letters ob[10] = {Letters('a'), Letters('b'),
     Letters('c'), Letters('d'), Letters('e'),
     Letters('f'), Letters('g'), Letters('h'),
     Letters('i'), Letters('j')};

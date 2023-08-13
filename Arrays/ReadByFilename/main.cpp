@@ -14,8 +14,7 @@ int main()
 	cin >> fileName;
 
 	dd.open(fileName);
-	if(dd.fail())
-    {
+	if(dd.fail()){
 		cout << "Not found file!!!" << endl;
 		exit(-1);
 	}

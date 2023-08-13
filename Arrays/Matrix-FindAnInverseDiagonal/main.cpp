@@ -13,13 +13,13 @@ int main()
 	int d[ROWS];
 
 	srand(time(NULL));
-	for(int i = 0; i < ROWS; i++)
-		for(int j = 0; j < COLUMN; j++)
+	for(int i = 0; i < ROWS; i++){
+       for(int j = 0; j < COLUMN; j++)
 			matA[i][j] = rand() % 10;
+	}
 
 	cout << "------MATRIX-------" << endl;
-	for(int i = 0; i < ROWS; i++)
-	{
+	for(int i = 0; i < ROWS; i++){
 		for(int j = 0; j < COLUMN; j++)
 			cout << matA[i][j] << "\t";
 		cout << endl;

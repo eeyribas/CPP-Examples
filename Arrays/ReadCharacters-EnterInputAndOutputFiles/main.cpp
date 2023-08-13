@@ -16,16 +16,14 @@ int main()
 	ofstream d_out;
 
 	d_in.open(input);
-	if(d_in.fail())
-    {
+	if(d_in.fail()){
 		cout << "Not find file!!!";
 		exit(-1);
 	}
 
 	d_out.open(output);
 	char ch;
-	while(!d_in.eof())
-    {
+	while(!d_in.eof()){
 		d_in.get(ch);
 		if(ch == 'a')
 			d_out.put('A');

@@ -7,6 +7,7 @@ using namespace std;
 class Array{
 	int i_size, j_size;
 	int *p;
+
 public:
 	Array(int i, int j);
 	int &Put(int i, int j);
@@ -30,6 +31,7 @@ int &Array::Put(int i, int j)
 		cout << "Limited Error!!!\n";
 		exit(1);
 	}
+
 	return p[i * j_size + j];
 }
 
@@ -47,13 +49,15 @@ int main()
 {
 	Array a(2, 3);
 
-	for(int i = 0; i < 2; i++)
-		for(int j = 0; j < 3; j++)
+	for(int i = 0; i < 2; i++){
+       for(int j = 0; j < 3; j++)
 			a.Put(i, j) = i + j;
+	}
 
-	for(int i = 0; i < 2; i++)
-		for(int j = 0; j < 3; j++)
+	for(int i = 0; i < 2; i++){
+        for(int j = 0; j < 3; j++)
 			cout << a.Get(i, j) << ' ';
+	}
 
 	a.Put(10, 10);
 
