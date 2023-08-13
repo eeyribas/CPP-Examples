@@ -8,14 +8,12 @@ class Coordinaat
 public:
     int x, y;
 
-	Coordinaat()
-	{
+	Coordinaat(){
 		x = 0;
 		y = 0;
 	}
 
-	Coordinaat(int i, int j)
-	{
+	Coordinaat(int i, int j){
 		x = i;
 		y = j;
 	}

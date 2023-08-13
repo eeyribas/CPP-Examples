@@ -1,6 +1,6 @@
-#include<iostream>
-#include<conio.h>
-#include<iomanip>
+#include <iostream>
+#include <conio.h>
+#include <iomanip>
 
 using namespace std;
 
@@ -18,6 +18,7 @@ private:
 ostream &operator<<(ostream &output, const TelephoneNo &num)
 {
 	cout << "(" << num.field_code << ")" << num.central << "---" << num.line;
+
 	return output;
 }
 

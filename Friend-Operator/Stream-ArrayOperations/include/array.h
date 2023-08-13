@@ -1,7 +1,7 @@
 #ifndef ARRAY_H
 #define ARRAY_H
 
-#include<iostream>
+#include <iostream>
 
 using namespace std;
 using std::ostream;
@@ -13,7 +13,7 @@ class Array
 	friend istream &operator>>(istream &, Array &);
 
 public:
-	Array(int=10);
+	Array(int = 10);
 	Array(const Array &);
 	~Array();
 
@@ -21,8 +21,7 @@ public:
 	const Array &operator=(const Array &);
 	bool operator == (const Array &) const;
 
-	bool operator !=(const Array &right)const
-	{
+	bool operator !=(const Array &right) const{
 		return !(*this == right);
 	}
 

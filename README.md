@@ -5,7 +5,7 @@ C++ programmings sections;
 - Arrays = 29 Examples
 - Classes = 29 Examples
 - File Operations = 15 Examples
-- Loops = x Examples
+- Friend-Operator = 33 Examples
 - Operations = x Example
 - Pointers = x Examples
 - Simple Examples = x Examples

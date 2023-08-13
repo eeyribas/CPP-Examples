@@ -6,9 +6,9 @@ using namespace std;
 class MyClass
 {
 	int n, d;
+
 public:
-	MyClass(int i, int j)
-	{
+	MyClass(int i, int j){
 		n = i;
 		d = j;
 	}

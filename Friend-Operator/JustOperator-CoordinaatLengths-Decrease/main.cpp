@@ -6,21 +6,19 @@ using namespace std;
 class Coordinaat
 {
 	int x, y;
+
 public:
-	Coordinaat()
-	{
+	Coordinaat(){
 		x = 0;
 		y = 0;
 	}
 
-	Coordinaat(int i, int j)
-	{
+	Coordinaat(int i, int j){
 		x = i;
 		y = j;
 	}
 
-	void GetXY(int &i, int &j)
-	{
+	void GetXY(int &i, int &j){
 		i = x;
 		j = y;
 	}
@@ -32,7 +30,6 @@ public:
 Coordinaat Coordinaat::operator-(Coordinaat coord)
 {
 	Coordinaat temp;
-
 	temp.x = x - coord.x;
 	temp.y = y - coord.y;
 
@@ -43,6 +40,7 @@ Coordinaat Coordinaat::operator-()
 {
 	x = -x;
 	y = -y;
+
 	return *this;
 }
 

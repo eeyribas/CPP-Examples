@@ -9,8 +9,7 @@ class Watch
 	time_t t;
 
 public:
-	Watch()
-	{
+	Watch(){
 		t = time(NULL);
 	}
 

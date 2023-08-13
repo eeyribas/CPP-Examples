@@ -5,27 +5,25 @@ using namespace std;
 
 int P(int base, int exp);
 
-class Pwr{
+class Pwr
+{
 	int base;
 	int exp;
 
 public:
-	Pwr(int b, int e)
-	{
+	Pwr(int b, int e){
 		base = b;
 		exp = e;
 	}
 
-	operator int()
-	{
+	operator int(){
 		return P(base, exp);
 	}
 };
 
 int P(int base, int exp)
 {
-    int temp;
-	for(temp = 1; exp; exp--)
+	for(int temp = 1; exp; exp--)
 		temp = temp * base;
 
 	return temp;

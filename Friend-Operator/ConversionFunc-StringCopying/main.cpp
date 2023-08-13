@@ -10,14 +10,12 @@ class StrType
 	int len;
 
 public:
-	StrType(char *s)
-	{
+	StrType(char *s){
 		strcpy(str, s);
 		len = strlen(s);
 	}
 
-	operator char *()
-	{
+	operator char *(){
 		return str;
 	}
 };

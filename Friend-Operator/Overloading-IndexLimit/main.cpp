@@ -11,8 +11,7 @@ class ArrayType
 	int a[size];
 
 public:
-	ArrayType()
-	{
+	ArrayType(){
 		for(int i = 0; i < size; i++)
 			a[i] = i;
 	}
@@ -22,8 +21,7 @@ public:
 
 int &ArrayType::operator[](int i)
 {
-	if(i < 0 || i > size-1)
-    {
+	if(i < 0 || i > size - 1){
 		cout << "\nIndex = ";
 		cout << i << " limit. Error.\n";
 		exit(1);

@@ -6,14 +6,13 @@ using namespace std;
 class Number
 {
 	friend void XAssignment(Number &, int);
+
 public:
-	Number()
-	{
+	Number(){
 		x = 0;
 	}
 
-	void Print() const
-	{
+	void Print() const{
 		cout << x << endl;
 	}
 

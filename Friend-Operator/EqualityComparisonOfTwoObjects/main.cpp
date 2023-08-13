@@ -8,20 +8,17 @@ class Coordinaat
 	int x, y;
 
 public:
-	Coordinaat()
-	{
+	Coordinaat(){
 		x = 0;
 		y = 0;
 	}
 
-	Coordinaat(int i, int j)
-	{
+	Coordinaat(int i, int j){
 		x = i;
 		y = j;
 	}
 
-	void GetXY(int &i, int &j)
-	{
+	void GetXY(int &i, int &j){
 		i = x;
 		j = y;
 	}
@@ -49,7 +46,7 @@ int main()
 	else
 		cout << "obj_1 and obj_2 are different\n";
 
-    if(obj_1==obj_3)
+    if(obj_1 == obj_3)
         cout << "obj_1 and obj_3 are equal\n";
     else
         cout << "obj_1 and obj_3 are different\n";

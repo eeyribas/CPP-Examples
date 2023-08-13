@@ -1,26 +1,24 @@
 #include <iostream>
-#include<conio.h>
+#include <conio.h>
 
 using namespace std;
 
 class Coordinaat
 {
 	int x, y;
+
 public:
-	Coordinaat()
-	{
+	Coordinaat(){
 		x = 0;
 		y = 0;
 	}
 
-	Coordinaat(int i, int j)
-	{
+	Coordinaat(int i, int j){
 		x = i;
 		y = j;
 	}
 
-	void GetXY(int &i, int &j)
-	{
+	void GetXY(int &i, int &j){
 		i = x;
 		j = y;
 	}
@@ -42,7 +40,7 @@ int main()
     Coordinaat obj_1(10, 10), obj_2(5, 3), obj_3;
 	int x, y;
 
-	obj_3=obj_1 + obj_2;
+	obj_3 = obj_1 + obj_2;
 	obj_3.GetXY(x, y);
 	cout << "(o1 + o2) X= " << x << ", Y= " << y << "\n";
 

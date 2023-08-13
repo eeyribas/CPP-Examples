@@ -13,14 +13,12 @@ class StrType
 public:
 	StrType(char *s);
 
-	~StrType()
-	{
+	~StrType(){
 		cout << p << "p, being released\n";
 		delete [] p;
 	}
 
-	char *Get()
-	{
+	char *Get(){
         return p;
 	}
 

@@ -8,22 +8,19 @@ class ThreeD
 	int x, y, z;
 
 public:
-    ThreeD(int i, int j, int k)
-    {
+    ThreeD(int i, int j, int k){
 		x = i;
 		y = j;
 		z = k;
 	}
 
-	ThreeD()
-	{
+	ThreeD(){
 		x = 0;
 		y = 0;
 		z = 0;
 	}
 
-	void Get(int &i, int &j, int &k)
-	{
+	void Get(int &i, int &j, int &k){
 		i = x;
 		j = y;
 		k = z;

@@ -10,13 +10,11 @@ class Pr1
 	int priting;
 
 public:
-	Pr1()
-	{
+	Pr1(){
 		priting = 0;
 	}
 
-	void SetPrint(int status)
-	{
+	void SetPrint(int status){
 		priting = status;
 	}
 
@@ -28,13 +26,11 @@ class Pr2
 	int priting;
 
 public:
-	Pr2()
-	{
+	Pr2(){
 		priting = 0;
 	}
 
-	void SetPrint(int status)
-	{
+	void SetPrint(int status){
 		priting = status;
 	}
 

@@ -16,7 +16,7 @@ Array::Array(int tmp)
 	++array_count;
 
 	for(int i = 0; i < size; i++)
-		ptr[i]=0;
+		ptr[i] = 0;
 }
 
 Array::Array(const Array &init) : size(init.size)
@@ -52,6 +52,7 @@ const Array &Array::operator=(const Array &right)
 		for(int i = 0; i < size; i++)
 			ptr[i] = right.ptr[i];
 	}
+
 	return *this;
 }
 
@@ -71,6 +72,7 @@ bool Array::operator==(const Array &right) const
 const int &Array::operator[](int adv) const
 {
 	assert(0 <= adv && adv < size);
+
 	return ptr[adv];
 }
 
@@ -89,16 +91,15 @@ istream &operator>>(istream &input, Array &a)
 
 ostream &operator<<(ostream &output, const Array &a)
 {
-    int i;
-	for(i = 0; i < a.size; i++){
-		output<<setw(12)<<a.ptr[12];
+	for(int i = 0; i < a.size; i++){
+		output << setw(12) << a.ptr[12];
 
 		if((i + 1) % 4 == 0)
-			output<<endl;
+			output << endl;
 	}
 
 	if(i % 4 != 0)
-		output<<endl;
+		output << endl;
 
 	return output;
 }

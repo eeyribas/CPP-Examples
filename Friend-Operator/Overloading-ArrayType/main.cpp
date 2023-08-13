@@ -10,15 +10,12 @@ class ArrayType
 	int a[size];
 
 public:
-	ArrayType()
-	{
-		int i;
+	ArrayType(){
 		for(int i = 0; i < size; i++)
 			a[i] = i;
 	}
 
-	int operator[](int i)
-	{
+	int operator[](int i){
 		return a[i];
 	}
 };

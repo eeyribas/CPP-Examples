@@ -6,27 +6,25 @@ using namespace std;
 class Coordinaat
 {
 	int x, y;
+
 public:
-	Coordinaat()
-	{
+	Coordinaat(){
 		x = 0;
 		y = 0;
 	}
 
-	Coordinaat(int i, int j)
-	{
+	Coordinaat(int i, int j){
 		x = i;
 		y = j;
 	}
 
-	void GetXY(int &i, int &j)
-	{
+	void GetXY(int &i, int &j){
 		i = x;
 		j = y;
 	}
 
-	friend Coordinaat operator+(Coordinaat ob1, int i);
-	friend Coordinaat operator+(int i, Coordinaat ob1);
+	friend Coordinaat operator+(Coordinaat obj, int i);
+	friend Coordinaat operator+(int i, Coordinaat obj);
 };
 
 Coordinaat operator+(Coordinaat obj, int i)

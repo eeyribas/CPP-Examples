@@ -8,8 +8,7 @@ class Triangle
 	int height, base;
 
 public:
-	Triangle(int h, int b)
-	{
+	Triangle(int h, int b){
 		height = h;
 		base = b;
 	}
@@ -22,14 +21,12 @@ ostream &operator<<(ostream &stream, Triangle obj)
 	int j, k;
 	int i = j = obj.base - 1;
 
-	for(int h = obj.height - 1; h; h--)
-    {
+	for(int h = obj.height - 1; h; h--){
 		for(k = i; k; k--)
 			stream << ' ';
 		stream << '*';
 
-		if(j != 1)
-        {
+		if(j != 1){
 			for(k = j - i - 1; k; k--)
 				stream << ' ';
 			stream << '*';

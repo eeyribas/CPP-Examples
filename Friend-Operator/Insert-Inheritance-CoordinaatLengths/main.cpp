@@ -10,8 +10,7 @@ protected:
 	int revolve;
 
 public:
-	Planet(double d, int r)
-	{
+	Planet(double d, int r){
 		distance = d;
 		revolve = r;
 	}
@@ -22,8 +21,7 @@ class Earth : public Planet
 	double cir;
 
 public:
-	Earth(double d, int r) : Planet(d, r)
-	{
+	Earth(double d, int r) : Planet(d, r){
 		cir = 2 * distance * 3.1416;
 	}
 
@@ -35,6 +33,7 @@ ostream &operator<<(ostream &stream, Earth obj)
 	stream << "Distance= " << obj.distance << "\n";
 	stream << "Days= " << obj.revolve << "\n";
 	stream << "Cir= " << obj.cir << "\n";
+
 	return stream;
 }
 

@@ -7,58 +7,56 @@ using namespace std;
 class StrType
 {
 	char s[80];
+
 public:
-	StrType()
-	{
+	StrType(){
 		*s='\0';
 	}
 
-	StrType(char *p)
-	{
+	StrType(char *p){
 		strcpy(s, p);
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return s;
 	}
 
-	StrType operator+(StrType s2);
-	StrType operator=(StrType s2);
-	int operator<(StrType s2);
-	int operator>(StrType s2);
-	int operator==(StrType s2);
+	StrType operator+(StrType str);
+	StrType operator=(StrType str);
+	int operator<(StrType str);
+	int operator>(StrType str);
+	int operator==(StrType str);
 };
 
-StrType StrType::operator+(StrType s2)
+StrType StrType::operator+(StrType str)
 {
 	StrType temp;
 	strcpy(temp.s, s);
-	strcat(temp.s, s2.s);
+	strcat(temp.s, str.s);
 
 	return temp;
 }
 
-StrType StrType::operator=(StrType s2)
+StrType StrType::operator=(StrType str)
 {
-	strcpy(s, s2.s);
+	strcpy(s, str.s);
 
 	return *this;
 }
 
-int StrType::operator<(StrType s2)
+int StrType::operator<(StrType str)
 {
-	return strcmp(s, s2.s)<0;
+	return strcmp(s, str.s) < 0;
 }
 
-int StrType::operator>(StrType s2)
+int StrType::operator>(StrType str)
 {
-	return strcmp(s, s2.s)>0;
+	return strcmp(s, str.s) > 0;
 }
 
-int StrType::operator==(StrType s2)
+int StrType::operator==(StrType str)
 {
-	return strcmp(s, s2.s)==0;
+	return strcmp(s, str.s) == 0;
 }
 
 int main()

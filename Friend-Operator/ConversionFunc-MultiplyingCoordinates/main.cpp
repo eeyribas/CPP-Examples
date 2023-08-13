@@ -8,14 +8,12 @@ class Coordinaat
 	int x, y;
 
 public:
-    Coordinaat(int i, int j)
-    {
+    Coordinaat(int i, int j){
 		x = i;
 		y = j;
 	}
 
-	operator int()
-	{
+	operator int(){
 		return x * y;
 	}
 };
@@ -23,9 +21,8 @@ public:
 int main()
 {
 	Coordinaat o_1(2, 3), o_2(3, 4);
-	int i;
 
-	i = o_1;
+	int i = o_1;
 	cout << i << "\n";
 
 	i = 100 + o_2;

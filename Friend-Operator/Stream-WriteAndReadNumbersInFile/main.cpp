@@ -9,8 +9,7 @@ class Numbers
 	int x, y;
 
 public:
-	Numbers(int i, int j)
-	{
+	Numbers(int i, int j){
 		x = i;
 		y = j;
 	}
@@ -22,12 +21,14 @@ public:
 ostream &operator<<(ostream &stream, Numbers obj)
 {
 	stream << obj.x << ' ' << obj.y << "\n";
+
 	return stream;
 }
 
 istream &operator>>(istream &stream, Numbers &obj)
 {
 	stream >> obj.x >> obj.y;
+
 	return stream;
 }
 
@@ -35,8 +36,7 @@ int main()
 {
 	Numbers obj_1(1, 2), obj_2(3, 4);
 	ofstream out("test");
-	if(!out)
-    {
+	if(!out){
 		cout << "Not found file.\n";
 		return 1;
 	}
@@ -45,8 +45,7 @@ int main()
 	out.close();
 
 	ifstream in("test");
-	if(!in)
-    {
+	if(!in){
 		cout << "Not found file.\n";
 		return 1;
 	}

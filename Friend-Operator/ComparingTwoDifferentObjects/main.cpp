@@ -11,8 +11,7 @@ class Car
 	int speed;
 
 public:
-	Car(int p, int s)
-	{
+	Car(int p, int s){
 		pessengers = p;
 		speed = s;
 	}
@@ -26,8 +25,7 @@ public:
     int weight;
 	int speed;
 
-	Truck(int w, int s)
-	{
+	Truck(int w, int s){
 		weight = w;
 		speed = s;
 	}
