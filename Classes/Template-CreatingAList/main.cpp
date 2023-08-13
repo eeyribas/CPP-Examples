@@ -11,19 +11,16 @@ template <class Data> class List
 public:
 	List(Data d);
 
-	void Add(List *node)
-	{
+	void Add(List *node){
 		node->next = this;
 		next = 0;
 	}
 
-	List *GetNext()
-	{
+	List *GetNext(){
 		return next;
 	}
 
-	Data GetData()
-	{
+	Data GetData(){
 		return data;
 	}
 };
@@ -40,16 +37,14 @@ int main()
 	List<char> *p, *last;
 	last = &start;
 
-	for(int i = 0; i < 26; i++)
-    {
+	for(int i = 0; i < 26; i++){
 		p = new List<char>('a' + i);
 		p->Add(last);
 		last = p;
 	}
 
 	p = &start;
-	while(p)
-	{
+	while(p){
 		cout << p->GetData();
 		p = p->GetNext();
 	}

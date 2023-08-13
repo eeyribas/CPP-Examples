@@ -7,8 +7,7 @@ using namespace std;
 template<class X>
 int Find(X object, X *lst, int sze)
 {
-	for(int i = 0; i < sze; i++)
-    {
+	for(int i = 0; i < sze; i++){
         if(object == lst[i])
             return i;
     }

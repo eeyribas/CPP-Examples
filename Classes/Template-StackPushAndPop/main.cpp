@@ -11,8 +11,7 @@ template <class StackType> class Stack
 	int tos;
 
 public:
-	void Init()
-	{
+	void Init(){
 		tos = 0;
 	}
 
@@ -23,8 +22,7 @@ public:
 template <class StackType>
 void Stack<StackType>::Push(StackType obj)
 {
-	if(tos == SIZE)
-    {
+	if(tos == SIZE){
 		cout << "Stack is full.\n";
 		return;
 	}
@@ -35,8 +33,7 @@ void Stack<StackType>::Push(StackType obj)
 template<class StackType>
 StackType Stack<StackType>::Pop()
 {
-	if(tos == 0)
-    {
+	if(tos == 0){
 		cout << "Stack is empty.\n";
 		return 0;
 	}

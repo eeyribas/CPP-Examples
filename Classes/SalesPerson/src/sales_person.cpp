@@ -18,8 +18,7 @@ SalesPerson::SalesPerson()
 void SalesPerson::ReadSales()
 {
 	double info;
-	for(int i = 1; i <= 12; i++)
-    {
+	for(int i = 1; i <= 12; i++){
 		cout << "Enter months sales = " << i << ":";
 		cin >> info;
 		SalesSetting(i, info);

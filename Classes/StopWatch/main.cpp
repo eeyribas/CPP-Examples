@@ -47,7 +47,6 @@ void StopWatch::Show()
 int main()
 {
 	StopWatch watch;
-
 	watch.Start();
 	for(int i = 0; i < 320000; i++);
 	watch.Stop();

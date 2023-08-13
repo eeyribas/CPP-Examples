@@ -9,14 +9,12 @@ template <class CoordinaatType>class Coordinaat
 	CoordinaatType x, y;
 
 public:
-	Coordinaat(CoordinaatType i, CoordinaatType j)
-	{
+	Coordinaat(CoordinaatType i, CoordinaatType j){
 		x = i;
 		y = j;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << x << ", " << y << endl;
 	}
 };

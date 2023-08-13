@@ -8,13 +8,11 @@ class MyClass
 	int x;
 
 public:
-	MyClass(int n = 0)
-	{
+	MyClass(int n = 0){
 		x = n;
 	}
 
-	int GetX()
-	{
+	int GetX(){
 		return x;
 	}
 };

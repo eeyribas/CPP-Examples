@@ -23,8 +23,7 @@ void Stack::Init()
 
 void Stack::Push(char ch)
 {
-	if(tos == SIZE)
-    {
+	if(tos == SIZE){
 		cout << "Stack is full.!!";
 		return;
 	}
@@ -35,8 +34,7 @@ void Stack::Push(char ch)
 
 char Stack::Pop()
 {
-	if(tos == 0)
-    {
+	if(tos == 0){
 		cout << "Stack is empty!";
 		return 0;
 	}

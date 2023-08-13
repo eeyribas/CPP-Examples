@@ -7,12 +7,9 @@ template <class X> void Bubble(X *data, int sze)
 {
 	X t;
 
-	for(int a = 0; a < sze; a++)
-    {
-        for(int b = sze - 1; b >= a; b--)
-        {
-           if(data[b - 1] > data[b])
-           {
+	for(int a = 0; a < sze; a++){
+        for(int b = sze - 1; b >= a; b--){
+           if(data[b - 1] > data[b]){
 				t = data[b - 1];
 				data[b - 1] = data[b];
 				data[b] = t;

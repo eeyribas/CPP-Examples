@@ -3,6 +3,7 @@ Contains C++ Programming examples. IDE: CodeBlocks 20.03
 
 C++ programmings sections;
 - Arrays = 29 Examples
+- Classes = 29 Examples
 - File Operations = x Examples
 - Loops = x Examples
 - Operations = x Example

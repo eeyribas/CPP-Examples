@@ -18,11 +18,10 @@ Bytes::Bytes(double n)
 
 void Bytes::ShowBytes()
 {
-	for(int j = sizeof(double) - 1; j >= 0; j--)
-    {
+	for(int j = sizeof(double) - 1; j >= 0; j--){
 		cout << "Bytes = " << j << " : ";
-		for(int i = 128; i; i >>= 1)
-		{
+
+		for(int i = 128; i; i >>= 1){
             if(i & c[j])
                 cout << "1";
 			else

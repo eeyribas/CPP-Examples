@@ -25,8 +25,8 @@ void Queue::Enqueue(int num)
 
 	tail++;
 	if(tail == SIZE)
-        tail=0;
-	queue[tail]=num;
+        tail = 0;
+	queue[tail] = num;
 }
 
 void Queue::Init()
@@ -36,8 +36,7 @@ void Queue::Init()
 
 int Queue::Dequeue()
 {
-	if(head == tail)
-    {
+	if(head == tail){
 		cout << "Queue is empty.\n";
 		return 0;
 	}
@@ -54,14 +53,12 @@ int main()
 	q_1.Init();
 	q_2.Init();
 
-	for(int i = 0; i <= 10; i++)
-    {
+	for(int i = 0; i <= 10; i++){
 		q_1.Enqueue(i);
 		q_2.Enqueue(i * i);
 	}
 
-	for(int i = 0; i <= 10; i++)
-    {
+	for(int i = 0; i <= 10; i++){
 		cout << "Dequeue 1 = " << q_1.Dequeue() << "\n";
 		cout << "Degueue 2 = " << q_2.Dequeue() << "\n";
 	}

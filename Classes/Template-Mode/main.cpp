@@ -10,18 +10,15 @@ template <class X> X Mode(X *data, int sze)
 	X md, old_md;
 	int count, old_count;
 
-	for(t = 0; t < sze; t++)
-    {
+	for(t = 0; t < sze; t++){
 		md = data[t];
 		count = 1;
-		for(w = t + 1; w < sze; w++)
-		{
+		for(w = t + 1; w < sze; w++){
 		   if(md == data[w])
 				count++;
 		}
 
-		if(count > old_count)
-        {
+		if(count > old_count){
 			old_md = md;
 			old_count = count;
 		}

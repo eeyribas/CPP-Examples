@@ -9,14 +9,12 @@ template<class Type1, class Type2>class MyClass
 	Type2 j;
 
 public:
-	MyClass(Type1 a, Type2 b)
-	{
+	MyClass(Type1 a, Type2 b){
 		i = a;
 		j = b;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << i << ' ' << j << "\n";
 	}
 };

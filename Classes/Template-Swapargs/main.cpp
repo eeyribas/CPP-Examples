@@ -3,7 +3,8 @@
 
 using namespace std;
 
-template <class X>  void Swapargs(X &a, X &b){
+template <class X>  void Swapargs(X &a, X &b)
+{
 	X temp;
 	temp = a;
 	a = b;

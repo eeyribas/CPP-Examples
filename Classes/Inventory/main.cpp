@@ -11,8 +11,7 @@ class Inventory
 	int on_hand;
 
 public:
-	Inventory(char *i, double c, int o)
-	{
+	Inventory(char *i, double c, int o){
 		strcpy(item, i);
 		cost = c;
 		on_hand = o;

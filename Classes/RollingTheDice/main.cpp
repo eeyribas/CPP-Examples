@@ -9,8 +9,7 @@ class Dice
 	int val;
 
 public:
-	void Roll()
-	{
+	void Roll(){
         val = (rand() % 6) + 1;
         cout << val << "\n";
 	}
