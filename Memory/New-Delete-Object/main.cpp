@@ -8,14 +8,12 @@ class Sample
 	int i, j;
 
 public:
-	void SetIJ(int a, int b)
-	{
+	void SetIJ(int a, int b){
 		i = a;
 		j = b;
 	}
 
-	int GetProduct()
-	{
+	int GetProduct(){
 		return i * j;
 	}
 };
@@ -23,8 +21,7 @@ public:
 int main()
 {
 	Sample *p = new Sample;
-	if(!p)
-    {
+	if(!p){
 		cout << "Memory error.\n";
 		return 1;
 	}

@@ -7,12 +7,9 @@ using namespace std;
 int main()
 {
 	int *p;
-	try
-	{
+	try{
 		p = new int;
-	}
-	catch(bad_alloc xa)
-	{
+	} catch(bad_alloc xa){
 		cout << "Alloction failure.\n";
 		return 1;
 	}

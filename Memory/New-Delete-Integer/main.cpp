@@ -6,8 +6,7 @@ using namespace std;
 int main()
 {
 	int *p = new int;
-	if(!p)
-    {
+	if(!p){
 		cout << "Memory error.\n";
 		return 1;
 	}

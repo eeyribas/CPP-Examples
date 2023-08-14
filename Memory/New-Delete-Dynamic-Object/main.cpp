@@ -8,14 +8,12 @@ class Sample
 	int i, j;
 
 public:
-	Sample(int a, int b)
-	{
+	Sample(int a, int b){
 		i = a;
 		j = b;
 	}
 
-	int GetProduct()
-	{
+	int GetProduct(){
 		return i * j;
 	}
 };
@@ -23,14 +21,12 @@ public:
 int main()
 {
 	Sample *p = new Sample(6, 5);
-	if(!p)
-    {
+	if(!p){
 		cout << "Memory error.\n";
 		return 1;
 	}
 
 	cout << "Result = " << p->GetProduct() << "\n";
-
 	delete p;
 
 	getch();

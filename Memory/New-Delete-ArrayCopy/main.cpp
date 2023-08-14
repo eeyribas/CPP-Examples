@@ -10,8 +10,7 @@ class Array
 	int size;
 
 public:
-	Array(int sz)
-	{
+	Array(int sz){
         p = new int[sz];
 		if(!p)
 			exit(1);
@@ -19,21 +18,18 @@ public:
 		cout << "Constructor\n";
 	}
 
-	~Array()
-	{
+	~Array(){
 		delete []p;
 	}
 
 	Array(const Array &sz);
 
-	void Put(int i, int j)
-	{
+	void Put(int i, int j){
 		if(i >= 0 && i < size)
 			p[i] = j;
 	}
 
-	int Get(int i)
-	{
+	int Get(int i){
 		return p[i];
 	}
 };

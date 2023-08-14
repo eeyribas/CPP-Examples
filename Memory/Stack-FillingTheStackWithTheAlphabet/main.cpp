@@ -1,28 +1,30 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+#include <conio.h>
 
 using namespace std;
 
-#define size 27
+#define SIZE 27
 
 class Stack
 {
-	char stck[size];
+	char stck[SIZE];
 	int tos;
+
 public:
 	Stack();
 	void Push(char ch);
 	char Pop();
 };
 
-Stack::Stack(){
+Stack::Stack()
+{
 	cout << "Constructing a stack\n";
 	tos = 0;
 }
 
 void Stack::Push(char ch)
 {
-	if(tos == size){
+	if(tos == SIZE){
 		cout << "Stack is full\n";
 		return;
 	}
@@ -55,8 +57,7 @@ void ShowStack(Stack o)
 Stack LoadStack()
 {
 	Stack t;
-	char c;
-	for(c = 'a'; c <= 'z'; c++)
+	for(char c = 'a'; c <= 'z'; c++)
 		t.Push(c);
 
 	return t;

@@ -7,8 +7,7 @@ int main()
 {
 	float *f = new float;
 	int *i = new int;
-	if(!f || !i)
-    {
+	if(!f || !i){
 		cout << "Memory error.\n";
 		return 1;
 	}

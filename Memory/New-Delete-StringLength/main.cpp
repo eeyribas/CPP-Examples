@@ -13,13 +13,11 @@ public:
 	StrType(char *s);
 	StrType(const StrType &a);
 
-	~StrType()
-	{
+	~StrType(){
 		delete []p;
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return p;
 	}
 };
@@ -28,8 +26,7 @@ StrType::StrType(char *s)
 {
 	int l = strlen(s) + 1;
 	p = new char[l];
-	if(!p)
-    {
+	if(!p){
 		cout << "Alloction error.\n";
 		exit(1);
 	}

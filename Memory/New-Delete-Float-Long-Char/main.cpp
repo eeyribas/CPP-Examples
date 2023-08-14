@@ -9,8 +9,7 @@ int main()
 	long *l = new long;
 	char *c = new char;
 
-	if(!f || !l || !c)
-    {
+	if(!f || !l || !c){
 		cout << "Error\n";
 		return 0;
 	}

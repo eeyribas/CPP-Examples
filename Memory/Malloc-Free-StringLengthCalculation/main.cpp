@@ -11,26 +11,23 @@ class StrType
 	int len;
 
 public:
-	StrType(char *ptr)
-	{
-		len = strlen(ptr);
+	StrType(char *ptr){
+        len = strlen(ptr);
 		p = (char *) malloc(len + 1);
-		if(!p)
-        {
+
+		if(!p){
 			cout << "Memory error.\n";
 			exit(-1);
 		}
 		strcpy(p, ptr);
 	}
 
-	~StrType()
-	{
+	~StrType(){
 		cout << "p free.\n";
 		free(p);
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << p << "  --length = " << len;
 		cout << "\n";
 	}

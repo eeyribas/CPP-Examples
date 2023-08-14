@@ -7,11 +7,11 @@ C++ programmings sections;
 - File Operations = 15 Examples
 - Friend-Operator = 33 Examples
 - Functions = 14 Examples
-- Operations = x Example
+- Memory = 22 Examples
+- Object Oriented Programming (OOP) = x Examples
 - Pointers = x Examples
 - Simple Examples = x Examples
 - Standart Library (STL) = x Examples
 - Statics = x Examples
-- Structs = x Examples
 
 There are x examples in total. Good repo for new C++ Programming beginners.

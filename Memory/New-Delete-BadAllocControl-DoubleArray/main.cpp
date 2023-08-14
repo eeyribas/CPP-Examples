@@ -7,19 +7,15 @@ using namespace std;
 int main()
 {
     double *p;
-	do
-    {
-		try
-		{
+	do{
+		try{
 			p = new double[100000];
-		}
-		catch(bad_alloc xa)
-		{
+		} catch(bad_alloc xa){
 			cout << "Alloction failure.\n";
 			return 1;
 		}
 		cout << "Alloction OK.\n";
-	}while(p);
+	} while(p);
 
 	getch();
 	return 0;

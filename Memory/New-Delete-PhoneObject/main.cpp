@@ -29,8 +29,7 @@ void Phone::Show()
 int main()
 {
 	Phone *p = new Phone;
-	if(!p)
-    {
+	if(!p){
 		cout << "Memory error.\n";
 		return 1;
 	}
