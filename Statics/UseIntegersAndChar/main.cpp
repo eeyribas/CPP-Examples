@@ -14,17 +14,14 @@ class Output
 	int who;
 
 public:
-	Output(int w, char *s)
-	{
+	Output(int w, char *s){
 		strcpy(str, s);
 		i = 0;
 		who = w;
 	}
 
-	int PutBuf()
-	{
-        if(!str[i])
-        {
+	int PutBuf(){
+        if(!str[i]){
 			in_use = 0;
 			return 0;
 		}
@@ -35,8 +32,7 @@ public:
 		if(in_use != who)
 			return -1;
 
-		if(str[i])
-        {
+		if(str[i]){
 			out_buf[o_index] = str[i];
 			i++;
 			o_index++;
@@ -48,16 +44,15 @@ public:
 		return 0;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << out_buf << "\n";
 	}
 };
 
 
 char Output::out_buf[255];
-int Output::in_use=0;
-int Output::o_index=0;
+int Output::in_use = 0;
+int Output::o_index = 0;
 
 int main()
 {

@@ -8,13 +8,11 @@ class StaticFuncDemo
 	static int i;
 
 public:
-	static void Init(int x)
-	{
+	static void Init(int x){
 		i = x;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << i << "\n";
 	}
 };

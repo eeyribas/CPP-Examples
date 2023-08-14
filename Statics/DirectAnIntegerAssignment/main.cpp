@@ -8,13 +8,11 @@ class MyClass
 public:
     static int i;
 
-	void SetI(int n)
-	{
+	void SetI(int n){
 		i = n;
 	}
 
-	int GetI()
-	{
+	int GetI(){
 		return i;
 	}
 };

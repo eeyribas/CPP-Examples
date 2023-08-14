@@ -9,18 +9,15 @@ class Test
 	static int count;
 
 public:
-	Test()
-	{
+	Test(){
         count++;
 	}
 
-	~Test()
-	{
+	~Test(){
 		count--;
 	}
 
-	int GetCount()
-	{
+	int GetCount(){
 		return count;
 	}
 };
@@ -35,13 +32,11 @@ int main()
 
 	try{
 		p = new Test;
-		if(!p)
-        {
+		if(!p){
 			cout << "Memory error.\n";
 			return 1;
 		}
-	}
-	catch(bad_alloc ba){
+	} catch(bad_alloc ba){
 		cout << "Memory error.\n";
 		return 1;
 	}

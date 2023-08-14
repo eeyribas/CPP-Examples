@@ -12,6 +12,6 @@ C++ programmings sections;
 - Pointers = 7 Examples
 - Simple Examples = 35 Examples
 - Standart Library (STL) = 90 Examples
-- Statics = x Examples
+- Statics = 5 Examples
 
-There are x examples in total. Good repo for new C++ Programming beginners.
+There are 346 examples in total. Good repo for new C++ Programming beginners.
