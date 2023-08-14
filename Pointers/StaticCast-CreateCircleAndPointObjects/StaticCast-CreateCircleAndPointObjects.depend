@@ -1,8 +1,0 @@
-# depslib dependency file v1.0
-1690116450 source:d:\backup\github calismalar\c++-programming-examples\pointers\staticcast-createcircleandpointobjects\src\point.cpp
-	"point.h"
-	<iostream>
-
-1690116365 d:\backup\github calismalar\c++-programming-examples\pointers\staticcast-createcircleandpointobjects\include\point.h
-	<iostream>
-

@@ -8,19 +8,16 @@ class Sample
 	int a, b;
 
 public:
-	Sample(int n, int m)
-	{
+	Sample(int n, int m){
 		a = n;
 		b = m;
 	}
 
-	int GetA()
-	{
+	int GetA(){
 		return a;
 	}
 
-	int GetB()
-	{
+	int GetB(){
 		return b;
 	}
 };
@@ -31,8 +28,7 @@ int main()
 	Sample *p;
 	p = &objs[3];
 
-	for(int i = 0; i < 4; i++)
-    {
+	for(int i = 0; i < 4; i++){
 		cout << p->GetA() << ' ';
 		cout << p->GetB() << "\n";
 		p--;

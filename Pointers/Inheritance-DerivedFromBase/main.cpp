@@ -8,13 +8,11 @@ class Base
 	int x;
 
 public:
-	void SetX(int n)
-	{
+	void SetX(int n){
 		x = n;
 	}
 
-	int GetX()
-	{
+	int GetX(){
 		return x;
 	}
 };
@@ -24,13 +22,11 @@ class Derived : public Base
 	int y;
 
 public:
-	void SetY(int n)
-	{
+	void SetY(int n){
 		y = n;
 	}
 
-	int GetY()
-	{
+	int GetY(){
 		return y;
 	}
 };

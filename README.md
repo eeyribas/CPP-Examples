@@ -9,7 +9,7 @@ C++ programmings sections;
 - Functions = 14 Examples
 - Memory = 22 Examples
 - Object Oriented Programming (OOP) = 67 Examples
-- Pointers = x Examples
+- Pointers = 7 Examples
 - Simple Examples = x Examples
 - Standart Library (STL) = x Examples
 - Statics = x Examples

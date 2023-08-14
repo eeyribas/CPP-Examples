@@ -1,6 +1,6 @@
-#include<iostream>
-#include<conio.h>
-#include<cstring>
+#include <iostream>
+#include <conio.h>
+#include <cstring>
 
 using namespace std;
 
@@ -11,6 +11,7 @@ class Record
 	char city[30];
 	char state[3];
 	char zip[10];
+
 public:
 	void Store(char *n, char *s, char *c, char *t, char *z);
 	void Display();
