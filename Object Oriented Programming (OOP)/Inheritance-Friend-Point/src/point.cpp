@@ -24,5 +24,6 @@ void Point::Setting(int a, int b)
 ostream &operator<<(ostream &a, const Point &b)
 {
 	a << '[' << b.x << "," << b.y << ']';
+
 	return a;
 }

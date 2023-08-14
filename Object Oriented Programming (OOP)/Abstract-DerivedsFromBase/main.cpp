@@ -6,8 +6,7 @@ using namespace std;
 class Base
 {
 public:
-	virtual void Func()
-	{
+	virtual void Func(){
 		cout << "Base() function.\n";
 	}
 };
@@ -15,8 +14,7 @@ public:
 class Derived1 : public Base
 {
 public:
-	void Func()
-	{
+	void Func(){
 		cout << "Derived1() function.\n";
 	}
 };
@@ -24,8 +22,7 @@ public:
 class Derived2 : public Base
 {
 public:
-	void Func()
-	{
+	void Func(){
 		cout << "Derived2() function.\n";
 	}
 };

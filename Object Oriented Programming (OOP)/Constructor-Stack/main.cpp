@@ -5,11 +5,11 @@ using namespace std;
 
 #define SIZE 30
 
-class Stack{
+class Stack
+{
 	char stck[SIZE];
 	int tos;
 	char who;
-
 
 public:
 	Stack(char c);
@@ -26,11 +26,10 @@ Stack::Stack(char c)
 
 void Stack::Push(char ch)
 {
-	if(tos == SIZE)
-    {
+	if(tos == SIZE){
 		cout << "Stack " << who << " full.\n";
 		return;
-}
+    }
 
 	stck[tos] = ch;
 	tos++;
@@ -39,9 +38,8 @@ void Stack::Push(char ch)
 char Stack::Pop()
 {
 	if(tos == 0)
-    {
 		cout << "Stack " << who << " empty\n";
-}
+
 	tos--;
 
 	return stck[tos];

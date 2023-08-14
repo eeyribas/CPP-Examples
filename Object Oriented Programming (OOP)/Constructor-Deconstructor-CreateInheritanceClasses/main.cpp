@@ -6,13 +6,11 @@ using namespace std;
 class Base
 {
 public:
-	Base()
-	{
+	Base(){
 		cout << "Base.\n";
 	}
 
-	~Base()
-	{
+	~Base(){
 		cout << "~Base.\n";
 	}
 };
@@ -20,13 +18,11 @@ public:
 class Derived : public Base
 {
 public:
-	Derived()
-	{
+	Derived(){
 		cout << "Derived.\n";
 	}
 
-	~Derived()
-	{
+	~Derived(){
 		cout << "~Derived.\n";
 	}
 };

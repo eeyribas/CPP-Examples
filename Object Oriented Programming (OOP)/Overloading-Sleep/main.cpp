@@ -1,5 +1,5 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+#include <conio.h>
 
 using namespace std;
 
@@ -22,14 +22,13 @@ int main()
 
 void Sleep(int n)
 {
-	long i;
 	for(; n; n--)
-		for(i = 0; i < DELAY; i++);
+		for(long i = 0; i < DELAY; i++);
 }
 
-void Sleep(char *n){
-	long i;
+void Sleep(char *n)
+{
 	int j = atoi(n);
 	for(; j; j--)
-		for(i = 0; i < DELAY; i++);
+		for(long i = 0; i < DELAY; i++);
 }

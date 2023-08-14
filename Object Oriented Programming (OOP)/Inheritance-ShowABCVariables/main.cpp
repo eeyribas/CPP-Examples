@@ -9,8 +9,7 @@ protected:
     int a, b;
 
 public:
-	void SetAB(int n, int m)
-	{
+	void SetAB(int n, int m){
 		a = n;
 		b = m;
 	}
@@ -21,13 +20,11 @@ class Derived : public Sample
 	int c;
 
 public:
-	void SetC(int m)
-	{
+	void SetC(int m){
 		c = m;
 	}
 
-	void ShowABC()
-	{
+	void ShowABC(){
 		cout << a << "  " << b << "  " << c << "\n";
 	}
 };

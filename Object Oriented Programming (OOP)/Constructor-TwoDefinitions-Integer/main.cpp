@@ -8,18 +8,15 @@ class Sample
 	int x;
 
 public:
-	Sample()
-	{
+	Sample(){
 		x = 0;
 	}
 
-	Sample(int a)
-	{
+	Sample(int a){
 		x = a;
 	}
 
-	int GetX()
-	{
+	int GetX(){
 		return x;
 	}
 };

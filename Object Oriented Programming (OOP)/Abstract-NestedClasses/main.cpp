@@ -24,8 +24,7 @@ public:
 class Derived3 : public Derived1, public Derived2
 {
 public:
-	int Product()
-	{
+	int Product(){
 		return i * j * k;
 	}
 };

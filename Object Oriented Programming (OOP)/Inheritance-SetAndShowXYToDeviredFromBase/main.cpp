@@ -8,13 +8,11 @@ class Base
 	int x;
 
 public:
-	void SetX(int n)
-	{
+	void SetX(int n){
 		x = n;
 	}
 
-	void ShowX()
-	{
+	void ShowX(){
         cout << x << "\n";
 	}
 };
@@ -24,14 +22,12 @@ class Derived : private Base
 	int y;
 
 public:
-	void SetXY(int n, int m)
-	{
+	void SetXY(int n, int m){
 		SetX(n);
 		y = m;
 	}
 
-	void ShowY()
-	{
+	void ShowY(){
 		ShowX();
 		cout << y << "\n";
 	}

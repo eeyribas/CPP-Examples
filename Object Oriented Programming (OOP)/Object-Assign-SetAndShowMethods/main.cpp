@@ -8,14 +8,12 @@ class MyClass
 	int a, b;
 
 public:
-	void Set(int i, int j)
-	{
+	void Set(int i, int j){
 		a = i;
 		b = j;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << a << ' ' << b << "\n";
 	}
 };

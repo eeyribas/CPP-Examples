@@ -6,7 +6,7 @@ using namespace std;
 
 class Base
 {
-	virtual void f(){};
+	virtual void Function(){};
 };
 
 class Derived1 : public Base{};

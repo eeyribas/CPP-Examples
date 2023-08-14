@@ -13,19 +13,16 @@ protected:
 public:
 	int c;
 
-	Sample(int n, int m)
-	{
+	Sample(int n, int m){
 		a = n;
 		b = m;
 	}
 
-	int GetA()
-	{
+	int GetA(){
 		return a;
 	}
 
-	int GetB()
-	{
+	int GetB(){
 		return b;
 	}
 };
@@ -33,7 +30,7 @@ public:
 int main()
 {
 	Sample obj(10, 20);
-	obj.c=30;
+	obj.c = 30;
 	cout << obj.GetA() << "  " << obj.GetB() << "  " << obj.c << "\n";
 
 	getch();

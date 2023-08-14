@@ -6,17 +6,17 @@ using namespace std;
 
 class B
 {
-	virtual void f(){}
+	virtual void Function(){}
 };
 
 class D1 : public B
 {
-	void f(){}
+	void Function(){}
 };
 
 class D2 : public B
 {
-	void f(){}
+	void Function(){}
 };
 
 int main()

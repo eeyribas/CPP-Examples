@@ -8,14 +8,12 @@ class Area
 	double dim_1, dim_2;
 
 public:
-	void SetArea(double d_1, double d_2)
-	{
+	void SetArea(double d_1, double d_2){
 		dim_1 = d_1;
 		dim_2 = d_2;
 	}
 
-	void GetDim(double &d_1, double &d_2)
-	{
+	void GetDim(double &d_1, double &d_2){
 		d_1 = dim_1;
 		d_2 = dim_2;
 	}
@@ -26,8 +24,7 @@ public:
 class Rectangle : public Area
 {
 public:
-	double GetArea()
-	{
+	double GetArea(){
 		double d_1, d_2;
 		GetDim(d_1, d_2);
 
@@ -38,8 +35,7 @@ public:
 class Triangle : public Area
 {
 public:
-	double GetArea()
-	{
+	double GetArea(){
 		double d_1, d_2;
 		GetDim(d_1, d_2);
 

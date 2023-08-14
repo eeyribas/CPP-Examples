@@ -14,13 +14,11 @@ public:
 	StrType();
 	StrType(char *s, int l);
 
-	char *GetString()
-	{
+	char *GetString(){
 		return p;
 	}
 
-	int GetLenght()
-	{
+	int GetLenght(){
 		return len;
 	}
 };
@@ -38,8 +36,7 @@ StrType::StrType()
 
 StrType::StrType(char *s, int l)
 {
-	if(strlen(s) >= 1)
-    {
+	if(strlen(s) >= 1){
 		cout << "Memory error\n";
 		exit(1);
 	}

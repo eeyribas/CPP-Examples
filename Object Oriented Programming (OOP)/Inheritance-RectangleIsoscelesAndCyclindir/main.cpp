@@ -13,14 +13,12 @@ public:
 class Rectangle : public AreaClass
 {
 public:
-	Rectangle(double h, double w)
-	{
+	Rectangle(double h, double w){
         height = h;
 		width = w;
 	}
 
-	double Area()
-	{
+	double Area(){
 		return height * width;
 	}
 };
@@ -28,14 +26,12 @@ public:
 class Isosceles : public AreaClass
 {
 public:
-	Isosceles(double h, double w)
-	{
+	Isosceles(double h, double w){
 		height = h;
 		width = w;
 	}
 
-	double Area()
-	{
+	double Area(){
 		return height * width * 0.5;
 	}
 };
@@ -43,19 +39,18 @@ public:
 class Cyclindir : public AreaClass
 {
 public:
-	Cyclindir(double h, double w)
-	{
+	Cyclindir(double h, double w){
 		height = h;
 		width = w;
 	}
 
-	double Area()
-	{
+	double Area(){
 		return (2 * 3.1416 * (width / 2) * (width / 2)) + (3.1416 * width * height);
 	}
 };
 
-int main(){
+int main()
+{
 	Rectangle b(10.0, 5.0);
 	Isosceles i(4.0, 6.0);
 	Cyclindir c(3.0, 4.0);

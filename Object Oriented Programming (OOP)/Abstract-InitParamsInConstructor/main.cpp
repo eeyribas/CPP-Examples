@@ -8,13 +8,11 @@ class Base
 public:
     int i;
 
-	Base(int x)
-	{
+	Base(int x){
 		i = x;
 	}
 
-	virtual void Func()
-	{
+	virtual void Func(){
 		cout << "Base - Func().\n";
 		cout << i << "\n";
 	}
@@ -25,10 +23,9 @@ class Derived1 : public Base
 public:
 	Derived1(int x) : Base(x){}
 
-    void Func()
-    {
+    void Func(){
         cout << "Derived1 - Func().\n";
-		cout << i * i<< "\n";
+		cout << i * i << "\n";
 	}
 };
 
@@ -37,8 +34,7 @@ class Derived2 : public Base
 public:
 	Derived2(int x) : Base(x){}
 
-    void Func()
-    {
+    void Func(){
 		cout << "Derived2 - Func().\n";
 		cout << i * i << "\n";
 	}

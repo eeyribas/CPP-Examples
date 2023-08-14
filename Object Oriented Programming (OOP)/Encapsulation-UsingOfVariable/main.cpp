@@ -8,13 +8,11 @@ class MyClass
 	int a;
 
 public:
-	void Set(int num)
-	{
+	void Set(int num){
 	    num = a;
 	}
 
-	int Get()
-	{
+	int Get(){
 	    return a;
 	}
 };

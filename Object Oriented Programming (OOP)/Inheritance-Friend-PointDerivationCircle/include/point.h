@@ -7,7 +7,7 @@ using std::ostream;
 
 class Point
 {
-	friend ostream &operator<<(ostream &, const Point &);
+	friend ostream &operator<<(ostream&, const Point&);
 
 public:
 	Point(int = 0, int = 0);

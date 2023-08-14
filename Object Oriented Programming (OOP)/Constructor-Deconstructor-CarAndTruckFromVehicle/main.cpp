@@ -9,14 +9,12 @@ class Vehicle
 	int range;
 
 public:
-	Vehicle(int w, int r)
-	{
+	Vehicle(int w, int r){
 		num_wheels = w;
 		range = r;
 	}
 
-	void ShowV()
-	{
+	void ShowV(){
 		cout << "Wheels = " << num_wheels << "\n";
 		cout << "Range = " << range << "\n";
 	}
@@ -27,13 +25,11 @@ class Car : public Vehicle
 	int pessengers;
 
 public:
-	Car(int p, int w, int r) : Vehicle(w, r)
-	{
+	Car(int p, int w, int r) : Vehicle(w, r){
 		pessengers = p;
 	}
 
-	void ShowC()
-	{
+	void ShowC(){
 		ShowV();
 		cout << "Pessengers = " << pessengers << "\n";
 	}
@@ -44,13 +40,11 @@ class Truck : public Vehicle
 	int load_limit;
 
 public:
-	Truck(int l, int w, int r) : Vehicle(w, r)
-	{
+	Truck(int l, int w, int r) : Vehicle(w, r){
 		load_limit = l;
 	}
 
-	void ShowT()
-	{
+	void ShowT(){
 		ShowV();
 		cout << "Loadlimit = " << load_limit << "\n";
 	}

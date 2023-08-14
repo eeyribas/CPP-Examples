@@ -8,13 +8,11 @@ class Sample
 	int a;
 
 public:
-	Sample(int n)
-	{
+	Sample(int n){
 		a = n;
 	}
 
-	int Get()
-	{
+	int Get(){
 		return a;
 	}
 };
@@ -22,8 +20,7 @@ public:
 int main()
 {
 	Sample obj[4][2] = {1, 2, 3, 4, 5, 6, 7, 8};
-	for(int i = 0; i < 4; i++)
-    {
+	for(int i = 0; i < 4; i++){
 		cout << obj[i][0].Get() << ' ';
 		cout << obj[i][1].Get() << "\n";
 	}

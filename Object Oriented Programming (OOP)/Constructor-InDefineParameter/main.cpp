@@ -8,19 +8,16 @@ class MyClass
 	int who;
 
 public:
-	MyClass(int n)
-	{
+	MyClass(int n){
 		who = n;
 		cout << "Constructor." << who << "\n";
 	}
 
-	~MyClass()
-	{
+	~MyClass(){
 		cout << "~Deconstructor." << who << "\n";
 	}
 
-	int id()
-	{
+	int id(){
 		return who;
 	}
 };

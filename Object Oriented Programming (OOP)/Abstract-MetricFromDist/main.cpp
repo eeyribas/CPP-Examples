@@ -8,13 +8,11 @@ class Dist
 public:
 	double d;
 
-	Dist(double f)
-	{
+	Dist(double f){
 		d = f;
 	}
 
-	virtual void TravTime()
-	{
+	virtual void TravTime(){
 		cout << "Travel time at 60 mph : \n";
 		cout << d / 60 << "\n";
 	}
@@ -25,8 +23,7 @@ class Metric : public Dist
 public:
 	Metric(double x) : Dist(x){}
 
-	void TravTime()
-	{
+	void TravTime(){
 		cout << "Travel time at 100 mph : \n";
 		cout << d / 100 << "\n";
 	}

@@ -20,8 +20,7 @@ Str::Str(char *ptr)
 {
 	len = strlen(ptr);
 	p = (char *)malloc(len + 1);
-	if(!p)
-    {
+	if(!p){
 		cout << "Memory error.!!";
 		exit(-1);
 	}

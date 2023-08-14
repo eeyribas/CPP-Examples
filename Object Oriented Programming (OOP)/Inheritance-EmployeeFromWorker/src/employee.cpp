@@ -1,5 +1,5 @@
 #include "employee.h"
-#include<iomanip>
+#include <iomanip>
 
 using std::ios;
 using std::setiosflags;

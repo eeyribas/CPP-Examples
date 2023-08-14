@@ -8,13 +8,11 @@ class B
 	int i;
 
 public:
-	void SetI(int n)
-	{
+	void SetI(int n){
 	    i = n;
 	}
 
-	int GetI()
-	{
+	int GetI(){
 	    return i;
 	}
 };
@@ -25,13 +23,11 @@ class D : public B
 	int j;
 
 public:
-	void SetJ(int n)
-	{
+	void SetJ(int n){
 	    j = n;
 	}
 
-	int Mul()
-	{
+	int Mul(){
 	    return j * GetI();
 	}
 };

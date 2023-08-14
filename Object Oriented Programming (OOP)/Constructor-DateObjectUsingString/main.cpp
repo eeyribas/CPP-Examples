@@ -10,15 +10,13 @@ class Date
 
 public:
 	Date(char *strm);
-	Date(int m, int d, int y)
-	{
+	Date(int m, int d, int y){
 		month = m;
 		day = d;
 		year = y;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << month << '/' << day << '/';
 		cout << year << "\n";
 	}

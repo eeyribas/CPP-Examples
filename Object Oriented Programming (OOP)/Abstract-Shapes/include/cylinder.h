@@ -14,8 +14,7 @@ public:
 	virtual double Area() const;
 	virtual double Volume() const;
 
-	virtual void WriteName() const
-	{
+	virtual void WriteName() const{
 		cout<<" Cylinder : ";
 	}
 

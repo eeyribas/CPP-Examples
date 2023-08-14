@@ -8,23 +8,19 @@ class MyClass
 	int x;
 
 public:
-	MyClass()
-	{
+	MyClass(){
 		x = 0;
 	}
 
-	MyClass(int n)
-	{
+	MyClass(int n){
 		x = n;
 	}
 
-	int GetX()
-	{
+	int GetX(){
 		return x;
 	}
 
-	void SetX(int n)
-	{
+	void SetX(int n){
 		x = n;
 	}
 };

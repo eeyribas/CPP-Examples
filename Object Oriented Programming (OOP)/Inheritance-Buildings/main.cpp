@@ -18,8 +18,7 @@ class House : public Building
 	int bathrooms;
 
 public:
-	House(int f, int r, double d, int b, int ba)
-	{
+	House(int f, int r, double d, int b, int ba){
 		floors = f;
 		rooms = r;
 		footage = d;
@@ -27,8 +26,7 @@ public:
 		bathrooms = ba;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << "Floors = " << floors << "\n" << "Rooms = " << rooms << "\n";
 		cout << "Footage = " << footage << "\n" << "Bedrooms = " << bedrooms << "\n";
 		cout << "Bathrooms = " << bathrooms << "\n";
@@ -40,9 +38,9 @@ class Office : public Building
 {
 	int phones;
 	int exiting;
+
 public:
-    Office(int f, int r, double fo, int p, int e)
-    {
+    Office(int f, int r, double fo, int p, int e){
         floors = f;
 		rooms = r;
 		footage = fo;
@@ -50,14 +48,12 @@ public:
 		exiting = e;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << "\nFloors = " << floors << "\n" << "Rooms = " << rooms << "\n";
 		cout << "Footage = " << footage << "\n" << "Phones = " << phones << "\n";
 		cout << "Exiting = " << exiting << "\n";
 	}
 };
-
 
 int  main()
 {

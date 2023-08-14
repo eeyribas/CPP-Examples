@@ -8,19 +8,16 @@ class Base
     int i;
 
 public:
-	Base(int n)
-	{
+	Base(int n){
 		cout << "Base.\n";
 		i = n;
 	}
 
-	~Base()
-	{
+	~Base(){
 		cout << "~Base.\n";
 	}
 
-	void ShowI()
-	{
+	void ShowI(){
 		cout << i << " value\n";
 	}
 };
@@ -30,19 +27,16 @@ class Derived : public Base
     int j;
 
 public:
-	Derived(int n) : Base(n)
-	{
+	Derived(int n) : Base(n){
 		cout << "Derived.\n";
 		j = n;
 	}
 
-	~Derived()
-	{
+	~Derived(){
 		cout << "~Derived.\n";
 	}
 
-	void ShowJ()
-	{
+	void ShowJ(){
 		cout << j << " value" << "\n";
 	}
 };

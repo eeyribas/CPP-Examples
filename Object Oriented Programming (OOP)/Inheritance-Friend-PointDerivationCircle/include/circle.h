@@ -8,7 +8,7 @@ using std::ostream;
 
 class Circle : public Point
 {
-	friend ostream &operator<<(ostream &, const Circle &);
+	friend ostream &operator<<(ostream&, const Circle&);
 
 public:
 	Circle(double r = 0.0, int x = 0, int y = 0);

@@ -14,7 +14,7 @@ public:
 
 MyClass::MyClass(int x, int y)
 {
-	cout<<"Constructor.\n";
+	cout << "Constructor.\n";
 	a = x;
 	b = y;
 }

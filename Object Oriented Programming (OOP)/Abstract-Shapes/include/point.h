@@ -9,25 +9,22 @@ using namespace std;
 class Point : public Shape
 {
 public:
-	Point(int=0, int=0);
+	Point(int = 0, int = 0);
 	void SetPoint(int, int);
 
-	int xRead() const
-	{
+	int XRead() const{
         return x;
 	}
 
-	int yRead() const
-	{
+	int YRead() const{
 		return y;
 	}
 
-	virtual void WriteName()const
-	{
-		cout<<"Point : ";
+	virtual void WriteName() const{
+		cout << "Point : ";
 	}
 
-	virtual void Write()const;
+	virtual void Write() const;
 
 private:
 	int x, y;

@@ -9,18 +9,15 @@ class MyClass
 	int a;
 
 public:
-	MyClass(int n)
-	{
+	MyClass(int n){
 		a = n;
 	}
 
-	MyClass(char *str)
-	{
+	MyClass(char *str){
 		a = atoi(str);
 	}
 
-	int Get()
-	{
+	int Get(){
 		return a;
 	}
 };

@@ -13,8 +13,7 @@ public:
 	List *next;
 	int num;
 
-	List()
-	{
+	List(){
 		head = tail = next = NULL;
 	}
 
@@ -32,8 +31,7 @@ public:
 void Queue::Store(int i)
 {
 	List *item = new Queue;
-	if(!item)
-    {
+	if(!item){
 		cout << "Not find.\n";
 		exit(1);
 	}
@@ -51,8 +49,7 @@ int Queue::Retrieve()
 {
 	List *p;
 
-	if(!head)
-    {
+	if(!head){
 		cout << "Listis empty.\n";
 		return 0;
 	}
@@ -76,8 +73,7 @@ void Stack::Store(int i)
 {
 	List *item = new Stack;
 
-	if(!item)
-    {
+	if(!item){
 		cout << "Alloction error.\n";
 		exit(1);
 	}
@@ -93,8 +89,7 @@ int Stack::Retrieve()
 {
 	List *p;
 
-	if(!head)
-    {
+	if(!head){
 		cout << "List is empty.\n";
 		exit(1);
 	}

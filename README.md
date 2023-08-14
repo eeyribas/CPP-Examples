@@ -8,7 +8,7 @@ C++ programmings sections;
 - Friend-Operator = 33 Examples
 - Functions = 14 Examples
 - Memory = 22 Examples
-- Object Oriented Programming (OOP) = x Examples
+- Object Oriented Programming (OOP) = 67 Examples
 - Pointers = x Examples
 - Simple Examples = x Examples
 - Standart Library (STL) = x Examples

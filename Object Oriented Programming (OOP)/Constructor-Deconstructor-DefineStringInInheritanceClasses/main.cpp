@@ -9,13 +9,11 @@ class Base
 	char str[80];
 
 public:
-	Base(char *s)
-	{
+	Base(char *s){
 		strcpy(str, s);
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return str;
 	}
 };
@@ -25,18 +23,15 @@ class Derived : public Base
 	int len;
 
 public:
-	Derived(char *s) : Base(s)
-	{
+	Derived(char *s) : Base(s){
 		len = strlen(s);
 	}
 
-	int GetLength()
-	{
+	int GetLength(){
 		return len;
 	}
 
-	void Show()
-	{
+	void Show(){
 		cout << Get() << "\n";
 	}
 };

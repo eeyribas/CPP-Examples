@@ -6,13 +6,11 @@ using namespace std;
 class B1
 {
 public:
-	B1()
-	{
+	B1(){
 		cout << "B1 constructor\n";
 	}
 
-	~B1()
-	{
+	~B1(){
 		cout << "B1 deconstructor\n";
 	}
 };
@@ -20,13 +18,11 @@ public:
 class B2
 {
 public:
-	B2()
-	{
+	B2(){
 		cout << "B2 constructor\n";
 	}
 
-	~B2()
-	{
+	~B2(){
 		cout << "B2 deconstructor\n";
 	}
 };
@@ -34,14 +30,12 @@ public:
 class D : public B1, public B2
 {
 public:
-	D()
-	{
-		cout << "D constructor\n";
+	D(){
+        cout << "D constructor\n";
 	}
 
-	~D()
-	{
-		cout << "D deconstructor\n";
+	~D(){
+        cout << "D deconstructor\n";
 	}
 };
 

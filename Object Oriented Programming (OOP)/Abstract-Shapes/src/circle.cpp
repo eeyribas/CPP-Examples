@@ -7,7 +7,7 @@ Circle::Circle(double r, int a, int b) : Point(a, b)
 
 void Circle::SetR(double tmp)
 {
-	r= tmp > 0 ? tmp : 0;
+	r = tmp > 0 ? tmp : 0;
 }
 
 double Circle::ReadR() const
@@ -23,5 +23,5 @@ double Circle::Area()const
 void Circle::Write()const
 {
 	Point::Write();
-	cout<<" ; r = " << r;
+	cout << " ; r = " << r;
 }

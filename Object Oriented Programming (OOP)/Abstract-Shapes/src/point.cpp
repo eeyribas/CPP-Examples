@@ -5,7 +5,8 @@ Point::Point(int a, int b)
 	SetPoint(a, b);
 }
 
-void Point::SetPoint(int a, int b){
+void Point::SetPoint(int a, int b)
+{
 	x = a;
 	y = b;
 }

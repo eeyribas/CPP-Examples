@@ -7,19 +7,21 @@ using namespace std;
 class SquareClass
 {
 	int i;
+
 public:
 	SquareClass(int n){
 		i = n;
 	}
+
 	void SetI(int n){
         i = n;
 	}
+
 	int GetI(){
 		return i;
 	}
 
-	int Calc()
-	{
+	int Calc(){
 	    return sqrt(i);
 	}
 };

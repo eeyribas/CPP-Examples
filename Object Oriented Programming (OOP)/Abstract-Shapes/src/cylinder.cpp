@@ -22,5 +22,5 @@ double Cylinder::Volume() const
 void Cylinder::Write() const
 {
 	Circle::Write();
-	cout<<" ; Height = " << h;
+	cout << " ; Height = " << h;
 }

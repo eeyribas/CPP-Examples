@@ -66,14 +66,21 @@ void Apple::SetA(char *n, enum Color c, enum Res ck, enum Res crchy, enum Res e)
 void Apple::Show()
 {
 	cout << name << " Apple : " << "\n";
-	cout << "Cont. : ";    Out(continueing);
-	cout << "Seasonal : ";  Out(seasonal);
-	cout << "Tree : ";   Out(tree);
-	cout << "Tropical : "; Out(tropical);
+	cout << "Cont. : ";
+	Out(continueing);
+	cout << "Seasonal : ";
+	Out(seasonal);
+	cout << "Tree : ";
+	Out(tree);
+	cout << "Tropical : ";
+	Out(tropical);
 	cout << "Color : " << c[clr] << "\n";
-	cout << "For cook : ";  Out(for_cook);
-	cout << "For water : ";   Out(for_water);
-	cout << "For food : ";   Out(for_food);
+	cout << "For cook : ";
+	Out(for_cook);
+	cout << "For water : ";
+	Out(for_water);
+	cout << "For food : ";
+	Out(for_food);
 	cout << "\n";
 }
 
@@ -105,14 +112,21 @@ void Orange::SetO(char *n, enum Color c, enum Res ck, enum Res crchy, enum Res e
 void Orange::Show()
 {
 	cout << name << " Orange : " << "\n";
-	cout << "Cont. : ";    Out(continueing);
-	cout << "Seasonal : ";  Out(seasonal);
-	cout << "Tree : ";   Out(tree);
-	cout << "Tropical : "; Out(tropical);
+	cout << "Cont. : ";
+	Out(continueing);
+	cout << "Seasonal : ";
+	Out(seasonal);
+	cout << "Tree : ";
+	Out(tree);
+	cout << "Tropical : ";
+	Out(tropical);
 	cout << "Color : " << c[clr] << "\n";
-	cout << "Juice : ";    Out(juice);
-	cout << "Jam : ";  Out(jam);
-	cout << "Food : ";   Out(food);
+	cout << "Juice : ";
+	Out(juice);
+	cout << "Jam : ";
+	Out(jam);
+	cout << "Food : ";
+	Out(food);
 	cout << "\n";
 }
 

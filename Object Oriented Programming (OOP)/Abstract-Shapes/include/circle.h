@@ -10,11 +10,10 @@ class Circle : public Point
 public:
 	Circle(double r = 0, int x = 0, int y = 0);
 	void SetR(double);
-	double ReadR()const;
+	double ReadR() const;
 	virtual double Area() const;
 
-	virtual void WriteName() const
-	{
+	virtual void WriteName() const{
 		cout << "Circle : ";
 	}
 

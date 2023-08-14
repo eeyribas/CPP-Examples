@@ -15,8 +15,8 @@ double Square(double y)
 
 int main()
 {
-	cout << "7 square = " << Square(7) <<
-         "\n" << "7.5 square = " << Square(7.5) << endl;
+	cout << "7 square = " << Square(7) << "\n"
+         << "7.5 square = " << Square(7.5) << endl;
 
 	getch();
 	return 0;
