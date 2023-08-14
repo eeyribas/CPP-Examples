@@ -5,13 +5,10 @@ using namespace std;
 
 void Compare(int a, int b)
 {
-	if(a > b)
-    {
+	if(a > b){
 		cout << "Max = " << a << endl;
 		cout << "Min = " << b << endl;
-	}
-	else
-        {
+	} else{
 		cout << "Max = " << b << endl;
 		cout << "Min = " << a << endl;
 	}

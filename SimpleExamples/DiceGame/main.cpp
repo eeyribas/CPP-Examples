@@ -16,7 +16,7 @@ int main()
 	if(a == b)
         cout << "\nTwin!!!" << endl;
 	else
-		cout << "\nYou have assigned different values!!!"<<endl;
+		cout << "\nYou have assigned different values!!!" << endl;
 
 	getch();
 	return 0;

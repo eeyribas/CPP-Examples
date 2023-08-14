@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1691431387 source:d:\backup\github\cplusplus-programming-examples--array-structs-loops-etc\simpleexamples\singleortwin\main.cpp
+	<iostream>
+	<conio.h>
+

@@ -1,9 +1,7 @@
-#include<iostream>
-#include<conio.h>
+#include <iostream>
+#include <conio.h>
 
-using std::cout;
-using std::endl;
-using std::cin;
+using namespace std;
 
 int main()
 {

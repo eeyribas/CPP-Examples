@@ -11,9 +11,9 @@ int main()
 	do{
 		cout << " ; ";
 		cin >> ch;
-	}while(ch != 'x');
+	} while(ch != 'x');
 
-	cout<<"You find that you have exited the program."<<endl;
+	cout << "You find that you have exited the program." << endl;
 
 	getch();
 	return 0;

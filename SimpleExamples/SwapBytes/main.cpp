@@ -7,7 +7,7 @@ union SwapBytes
 {
 	unsigned char c[2];
 	unsigned i;
-	SwapBytes (unsigned x);
+	SwapBytes(unsigned x);
 	void Swap();
 };
 

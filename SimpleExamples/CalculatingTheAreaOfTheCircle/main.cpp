@@ -1,13 +1,13 @@
 #include <iostream>
 #include <conio.h>
 
+#define PI 3.14
+
 using namespace std;
 
 void Init(int &r);
 double Area(int r);
 void Print(double f);
-
-#define PI 3.14
 
 int main()
 {

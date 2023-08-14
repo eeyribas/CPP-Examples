@@ -8,14 +8,12 @@ class Sample
 	int i, j;
 
 public:
-	Sample(int a, int b)
-	{
+	Sample(int a, int b){
 	    i = a;
 	    j = b;
 	}
 
-	int Divisible()
-	{
+	int Divisible(){
 		return !(i%j);
 	}
 };

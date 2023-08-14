@@ -8,8 +8,7 @@ class DivideByZeroException
 public:
 	DivideByZeroException() : message("Zero division has been attempted"){}
 
-	const char *What() const
-	{
+	const char *What() const{
 		return message;
 	}
 
@@ -36,8 +35,7 @@ int main()
         try{
             result = Section(number_1, number_2);
             cout << " Section =: " << result << endl;
-        }
-        catch(DivideByZeroException ex){
+        } catch(DivideByZeroException ex){
             cout << "No exception occurred: " << ex.What() << '\n';
         }
         cout << "\n	Enter two integers (Enter ^Z for output) = ";

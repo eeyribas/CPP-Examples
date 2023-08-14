@@ -5,8 +5,8 @@
 using namespace std;
 
 void Data(double &a, double &b, double &c);
-void Calculation(double a, double b, double c, double &x1, double &x2);
-void Print(double x1, double x2);
+void Calculation(double a, double b, double c, double &x_1, double &x_2);
+void Print(double x_1, double x_2);
 
 void Data(double &a, double &b, double &c)
 {
@@ -18,7 +18,7 @@ void Data(double &a, double &b, double &c)
 	cin >> c;
 }
 
-void Calculation(double a, double b, double c, double &x1, double &x2)
+void Calculation(double a, double b, double c, double &x_1, double &x_2)
 {
 	double delta = (b * b) - (4 * a * c);
 	if(delta < 0){
@@ -27,22 +27,22 @@ void Calculation(double a, double b, double c, double &x1, double &x2)
 	}
 
 	double sdelta = sqrt(delta);
-	x1 = (-b - sdelta) / 2 * a;
-	x2 = (-b + sdelta) / 2 * a;
+	x_1 = (-b - sdelta) / 2 * a;
+	x_2 = (-b + sdelta) / 2 * a;
 }
 
-void Print(double x1, double x2)
+void Print(double x_1, double x_2)
 {
-	cout << "x1 = " << x1 << endl;
-	cout << "x2 = " << x2 << endl;
+	cout << "x_1 = " << x_1 << endl;
+	cout << "x_2 = " << x_2 << endl;
 }
 
 int main()
 {
-	double a, b, c, x1, x2;
+	double a, b, c, x_1, x_2;
 	Data(a, b, c);
-	Calculation(a, b, c, x1, x2);
-	Print(x1, x2);
+	Calculation(a, b, c, x_1, x_2);
+	Print(x_1, x_2);
 
 	getch();
 	return 0;

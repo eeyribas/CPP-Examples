@@ -7,7 +7,7 @@ int main()
 {
 	double feet;
 
-	do {
+	do{
 		cout << "Enter feet (press 0 to exit) = ";
 		cin >> feet;
 		cout << feet * 12 << "  inc\n";

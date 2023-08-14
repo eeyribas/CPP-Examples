@@ -6,18 +6,18 @@ using namespace std;
 int main()
 {
 	cout << "First sentence." << endl;
-	goto s3;
-s1:
-	cout<<"\nSecond sentence."<<endl;
+	goto s_3;
+s_1:
+	cout << "\nSecond sentence." << endl;
 	goto last;
 
-s2:
-	cout<<"\nThirdly sentence."<<endl;
-	goto s1;
+s_2:
+	cout << "\nThirdly sentence." << endl;
+	goto s_1;
 
-s3:
-	cout<<"\nFourtly sentence."<<endl;
-	goto s2;
+s_3:
+	cout << "\nFourtly sentence." << endl;
+	goto s_2;
 
 last:
 	getch();
