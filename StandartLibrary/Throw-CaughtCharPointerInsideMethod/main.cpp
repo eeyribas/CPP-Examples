@@ -5,12 +5,9 @@ using namespace std;
 
 void XHandler()
 {
-	try
-	{
+	try{
 		throw "Hello";
-	}
-	catch(char *)
-	{
+	} catch(char *){
 		cout << "Caught char * inside XHandler.\n";
 		throw;
 	}
@@ -19,12 +16,9 @@ void XHandler()
 int main()
 {
 	cout << "Start\n";
-	try
-	{
+	try{
 		XHandler();
-	}
-	catch(char *)
-	{
+	} catch(char *){
 		cout << "Caught char * inside main.\n";
 	}
 	cout << "End";

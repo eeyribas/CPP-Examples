@@ -10,18 +10,15 @@ class Name
 	char str[20];
 
 public:
-	Name()
-	{
+	Name(){
 		strcpy(str, "");
 	}
 
-	Name(char *s)
-	{
+	Name(char *s){
 		strcpy(str, s);
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return str;
 	}
 };
@@ -36,18 +33,15 @@ class PhoneNumber
 	char str[20];
 
 public:
-	PhoneNumber()
-	{
+	PhoneNumber(){
 		strcmp(str, "");
 	}
 
-	PhoneNumber(char *s)
-	{
+	PhoneNumber(char *s){
 		strcmp(str, s);
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return str;
 	}
 };

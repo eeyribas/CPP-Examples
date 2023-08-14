@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void XHandler(int test) throw(int, char, double)
+void XHandler(int test) throw (int, char, double)
 {
 	if(test == 0)
 		throw test;
@@ -16,20 +16,13 @@ void XHandler(int test) throw(int, char, double)
 int main()
 {
 	cout << "Start\n";
-	try
-	{
+	try{
 		XHandler(0);
-	}
-	catch(int i)
-	{
+	} catch(int i){
 		cout << "Caught int\n";
-	}
-	catch(char c)
-	{
+	} catch(char c){
         cout << "Caught char\n";
-	}
-	catch(double d)
-	{
+	} catch(double d){
 		cout << "Caught double\n";
 	}
 	cout << "End";

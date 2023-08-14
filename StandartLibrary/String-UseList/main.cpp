@@ -21,8 +21,7 @@ int main()
 
 	str.sort();
 	list<string>::iterator p = str.begin();
-	while(p != str.end())
-    {
+	while(p != str.end()){
 		cout << *p << " ";
 		p++;
 	}

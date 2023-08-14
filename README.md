@@ -11,7 +11,7 @@ C++ programmings sections;
 - Object Oriented Programming (OOP) = 67 Examples
 - Pointers = 7 Examples
 - Simple Examples = 35 Examples
-- Standart Library (STL) = x Examples
+- Standart Library (STL) = 90 Examples
 - Statics = x Examples
 
 There are x examples in total. Good repo for new C++ Programming beginners.

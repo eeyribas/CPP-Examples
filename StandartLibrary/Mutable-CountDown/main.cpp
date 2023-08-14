@@ -10,20 +10,20 @@ class CountDown
 	mutable int current;
 
 public:
-	CountDown(int delay, int i=1)
-	{
+	CountDown(int delay, int i = 1){
 		target = delay;
 		incr = i;
 		current = 0;
 	}
 
-	bool Counting()const
-	{
+	bool Counting() const{
 		current += incr;
+
 		if(current >= target) {
 			cout << "\a";
 			return false;
 		}
+
 		cout << current << " ";
 
 		return true;

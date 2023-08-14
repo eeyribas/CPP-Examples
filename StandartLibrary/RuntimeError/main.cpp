@@ -22,12 +22,9 @@ void Function1() throw (runtime_error)
 
 int main()
 {
-	try
-	{
+	try{
 		Function1();
-	}
-	catch(runtime_error e)
-	{
+	} catch(runtime_error e){
 		cout << "Error " << e.what() << endl;
 	}
 

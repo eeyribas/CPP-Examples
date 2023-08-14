@@ -15,10 +15,9 @@ istream &GetPass(istream &stream)
 int main()
 {
 	char pw[80];
-	do
-    {
+	do{
 		cin >> GetPass >> pw;
-	}while(strcmp(pw, "password"));
+	} while(strcmp(pw, "password"));
 	cout << "Login complete\n";
 
 	getch();

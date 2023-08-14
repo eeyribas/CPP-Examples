@@ -5,13 +5,10 @@ using namespace std;
 
 void XHandler(int test)
 {
-	try
-	{
+	try{
 		if(test)
 			throw test;
-	}
-	catch(int i)
-	{
+	} catch(int i){
 		cout << "Caught one! Ex = " << i << "\n";
 	}
 }
@@ -19,10 +16,12 @@ void XHandler(int test)
 int main()
 {
 	cout << "Start\n";
+
     XHandler(1);
 	XHandler(2);
 	XHandler(0);
 	XHandler(3);
+
 	cout << "End";
 
 	getch();

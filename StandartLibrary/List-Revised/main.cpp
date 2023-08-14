@@ -15,8 +15,7 @@ int main()
 	cout << "Original Content\n";
 
 	list<char>::iterator p;
-	while(!lst.empty())
-    {
+	while(!lst.empty()){
 		p = lst.begin();
 		cout << *p;
 		lst.pop_front();
@@ -27,8 +26,7 @@ int main()
 	cout << "new size = " << revist.size() << endl;
 	cout << "Revisted Content\n";
 	p = revist.begin();
-	while(p != revist.end())
-    {
+	while(p != revist.end()){
 		cout << *p;
 		p++;
 	}

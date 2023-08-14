@@ -1,7 +1,7 @@
-#include<iostream>
-#include<conio.h>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <conio.h>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 

@@ -13,15 +13,12 @@ void XTest(int test)
 int main()
 {
 	cout << "Start\n";
-	try
-	{
+	try{
 		cout << "Inside try block\n";
 		XTest(0);
 		XTest(1);
 		XTest(2);
-	}
-	catch(int i)
-	{
+	} catch(int i){
 		cout << "Caght one!Number is = ";
 		cout << i << "\n";
 	}

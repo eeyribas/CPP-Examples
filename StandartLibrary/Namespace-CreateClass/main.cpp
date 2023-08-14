@@ -8,19 +8,17 @@ namespace FirstNS
     class Demo
 	{
 		int i;
+
 	public:
-		Demo(int x)
-		{
+		Demo(int x){
 			i = x;
 		}
 
-		void SetI(int x)
-		{
+		void SetI(int x){
 			i = x;
 		}
 
-		int GetI()
-		{
+		int GetI(){
 			return i;
 		}
 	};

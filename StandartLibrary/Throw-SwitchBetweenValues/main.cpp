@@ -12,9 +12,7 @@ void XHandler(int test)
 			throw 'a';
 		if(test == 2)
 			throw 123.23;
-	}
-	catch(...)
-	{
+	} catch(...){
 		cout << "Caght One!\n";
 	}
 }

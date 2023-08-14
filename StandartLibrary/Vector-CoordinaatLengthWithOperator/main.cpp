@@ -9,13 +9,11 @@ class CoordinaatLength
 public:
 	int x, y;
 
-	CoordinaatLength()
-	{
+	CoordinaatLength(){
 		x = y = 0;
 	}
 
-	CoordinaatLength(int a, int b)
-	{
+	CoordinaatLength(int a, int b){
 		x = a;
 		y = b;
 	}
@@ -34,7 +32,6 @@ bool operator==(CoordinaatLength a, CoordinaatLength b)
 int main()
 {
 	vector<CoordinaatLength> v;
-
 	for(int i = 0; i < 10; i++)
 		v.push_back(CoordinaatLength(i, i));
 	for(int i = 0; i < v.size(); i++)

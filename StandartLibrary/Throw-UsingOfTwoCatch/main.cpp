@@ -10,13 +10,9 @@ void XHandler(int test)
 			throw test;
 		else
 			throw "Value = 0";
-	}
-	catch(int i)
-	{
+	} catch(int i){
 		cout << "Caught One! Ex = " << i << "\n";
-	}
-	catch(char *str)
-	{
+	} catch(char *str){
 		cout << "Caught string = ";
 		cout << str << "\n";
 	}

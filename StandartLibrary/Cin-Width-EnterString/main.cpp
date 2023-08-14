@@ -11,8 +11,7 @@ int main()
 	cout << "Enter sentence =\n";
 	cin.width(5);
 
-	while(cin >> str)
-    {
+	while(cin >> str){
 		cout.width(w++);
 		cout << str << endl;
 		cin.width(5);

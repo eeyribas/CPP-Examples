@@ -6,13 +6,10 @@ using namespace std;
 
 double Divible(double a, double b)
 {
-	try
-	{
+	try{
 		if(!b)
 			throw (b);
-	}
-	catch(double)
-	{
+	} catch(double){
 		cout << "Cannot divide by zero.\n";
 		exit(1);
 	}

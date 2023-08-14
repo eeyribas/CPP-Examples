@@ -6,14 +6,11 @@ using namespace std;
 int main()
 {
     cout << "Start\n";
-	try
-	{
+	try{
 		cout << "Insert try block\n";
 		throw 10;
 		cout << "This will not execute";
-	}
-	catch(int i)
-	{
+	} catch(int i){
 		cout << "Caught one! Number is = ";
 		cout << i << "\n";
 	}

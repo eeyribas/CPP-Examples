@@ -10,17 +10,15 @@ int main(int argc, char *argv[])
 	double b = atof(argv[2]);
 	double c = atof(argv[3]);
 	double delta = pow(b, 2) - (4 * a * c);
-	if(delta <0)
-	{
+
+	if(delta < 0){
 		cout << "The roots isn't reel." << endl;
-	}
-	else
-    {
-		double kdelta = sqrt(delta);
-		double x1 = -b - kdelta / (2 * a);
-		double x2 = -b + kdelta / (2 * a);
-		cout << x1 << endl;
-		cout << x2 << endl;
+	} else{
+		double k_delta = sqrt(delta);
+		double x_1 = -b - k_delta / (2 * a);
+		double x_2 = -b + k_delta / (2 * a);
+		cout << x_1 << endl;
+		cout << x_2 << endl;
 	}
 
 	getch();

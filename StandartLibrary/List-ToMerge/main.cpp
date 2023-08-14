@@ -7,7 +7,6 @@ using namespace std;
 int main()
 {
 	list<char> lst_1, lst_2;
-
 	for(int i = 0; i < 10; i += 2)
 		lst_1.push_back('A' + i);
 	for(int i = 0; i < 11; i += 2)
@@ -15,8 +14,7 @@ int main()
 
 	cout << "list_1 Content\n";
 	list<char>::iterator p = lst_1.begin();
-	while(p != lst_1.end())
-    {
+	while(p != lst_1.end()){
 		cout << *p;
 		p++;
 	}
@@ -36,8 +34,7 @@ int main()
 
 	cout << "To Merge\n";
 	p = lst_1.begin();
-	while(p != lst_1.end())
-    {
+	while(p != lst_1.end()){
 		cout << *p;
 		p++;
 	}

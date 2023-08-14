@@ -1,13 +1,13 @@
-#include<iostream>
-#include<conio.h>
-#include<vector>
-#include<algorithm>
+#include <iostream>
+#include <conio.h>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
 int main()
 {
-    vector<int> v, v2(20);
+    vector<int> v, v_2(20);
 
 	for(int i = 0; i < 20; i++){
 		if(i % 2)
@@ -21,11 +21,11 @@ int main()
 		cout << v[i] << " ";
 	cout << endl;
 
-	remove_copy(v.begin(), v.end(), v2.begin(), 1);
+	remove_copy(v.begin(), v.end(), v_2.begin(), 1);
 	cout << "Result = ";
-	for(int i = 0; i < v2.size(); i++)
-		cout << v2[i] << " ";
-	cout<<endl;
+	for(int i = 0; i < v_2.size(); i++)
+		cout << v_2[i] << " ";
+	cout << endl;
 
 	getch();
 	return 0;

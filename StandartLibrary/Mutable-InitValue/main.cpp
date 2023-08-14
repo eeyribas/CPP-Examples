@@ -7,14 +7,13 @@ class Demo
 {
 	mutable int i;
 	int j;
+
 public:
-	int GetI() const
-	{
+	int GetI() const{
 		return i;
 	}
 
-	void SetI(int x) const
-	{
+	void SetI(int x) const{
 		i = x;
 	}
 };

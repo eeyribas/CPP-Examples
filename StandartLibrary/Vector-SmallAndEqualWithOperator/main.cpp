@@ -9,24 +9,20 @@ class Demo
 	double d;
 
 public:
-	Demo()
-	{
+	Demo(){
 		d = 0.0;
 	}
 
-	Demo(double x)
-	{
+	Demo(double x){
 		d = x;
 	}
 
-	Demo &operator=(double x)
-	{
+	Demo &operator=(double x){
 		d = x;
 		return *this;
 	}
 
-	double GetD()
-	{
+	double GetD(){
 		return d;
 	}
 };

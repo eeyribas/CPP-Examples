@@ -15,8 +15,7 @@ int main()
 	cout << endl;
 
 	vector<int>::iterator p = v.begin();
-	while(p != v.end())
-    {
+	while(p != v.end()){
 		cout << *p << "  ";
 		p++;
 	}

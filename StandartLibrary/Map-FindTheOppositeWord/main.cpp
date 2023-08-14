@@ -10,18 +10,15 @@ class Word
 	char str[20];
 
 public:
-	Word()
-	{
+	Word(){
 		strcpy(str, "");
 	}
 
-	Word(char *s)
-	{
+	Word(char *s){
 		strcpy(str, s);
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return str;
 	}
 };
@@ -36,18 +33,15 @@ class Opposite
 	char str[20];
 
 public:
-	Opposite()
-	{
+	Opposite(){
 		strcmp(str, "");
 	}
 
-	Opposite(char *s)
-	{
+	Opposite(char *s){
 		strcmp(str, s);
 	}
 
-	char *Get()
-	{
+	char *Get(){
 		return str;
 	}
 };
@@ -55,7 +49,6 @@ public:
 int main()
 {
 	map<Word, Opposite> m;
-
 	m.insert(pair<Word, Opposite>(Word("yes"), Opposite("no")));
 	m.insert(pair<Word, Opposite>(Word("good"), Opposite("bad")));
 	m.insert(pair<Word, Opposite>(Word("left"), Opposite("right")));

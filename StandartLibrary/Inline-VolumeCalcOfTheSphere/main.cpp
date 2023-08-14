@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h>
-#include<cmath>
+#include <cmath>
 
 using namespace std;
 
