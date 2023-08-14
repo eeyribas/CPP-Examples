@@ -21,11 +21,11 @@ int Rotate(int i)
 long Rotate(long i)
 {
 	int x;
-
 	if(i & 0*80000000)
         x = 1;
 	else
         x = 0;
+
 	i = i << 1;
 	i += x;
 
@@ -34,7 +34,7 @@ long Rotate(long i)
 
 int main()
 {
-	int a = 0*8000;
+	int a = 0 * 8000;
 	long b = 8;
 	cout << Rotate(a);
 	cout << "\n";

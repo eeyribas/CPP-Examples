@@ -12,12 +12,10 @@ void Print(char *s, int how = -1)
 {
 	static int old_case = ignore;
 	if(how < 0)
-		how = old_case;
+        how = old_case;
 
-	while (*s)
-	{
-		switch (how)
-		{
+	while (*s){
+		switch (how){
 		case upper:
 			cout << (char)toupper(*s);
 			break;

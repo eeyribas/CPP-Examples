@@ -4,8 +4,8 @@
 
 using namespace std;
 
-const int c0=13;
-const int cf=12;
+const int c_0 = 13;
+const int c_f = 12;
 
 double Init()
 {
@@ -18,7 +18,7 @@ double Init()
 
 double Calculation(int a, double dm)
 {
-	double f = (cf * pow(c0, 2) * dm) / a;
+	double f = (c_f * pow(c_0, 2) * dm) / a;
 	return f;
 }
 

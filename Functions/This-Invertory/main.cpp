@@ -11,8 +11,7 @@ class Invertory
 	int on_hand;
 
 public:
-	Invertory(char *i, double c, int h)
-	{
+	Invertory(char *i, double c, int h){
 		strcpy(this->item, i);
 		this->cost = c;
 		this->on_hand = h;

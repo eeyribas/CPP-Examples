@@ -7,7 +7,7 @@ void F(int &n);
 
 int main()
 {
-	int i=0;
+	int i = 0;
 	F(i);
 	cout << "i new ref = " << i << "\n";
 

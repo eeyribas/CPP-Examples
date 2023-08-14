@@ -19,7 +19,6 @@ void RevStr(char *s)
 void RevStr(char *in, char *out)
 {
 	int j;
-
 	for(int i = strlen(in) - 1, j = 0; i >= 0; i--, j++)
 		out[j] = in[i];
 	out[j] = '\0';
