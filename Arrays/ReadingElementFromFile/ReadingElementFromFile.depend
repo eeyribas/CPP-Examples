@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1688915715 source:d:\backup\github calismalar\c++-programming-examples\arrays\readingelementfromfile\main.cpp
-	<iostream>
-	<conio.h>
-	<fstream>
-

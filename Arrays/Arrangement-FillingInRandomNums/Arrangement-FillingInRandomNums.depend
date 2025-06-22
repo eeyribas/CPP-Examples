@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1688917595 source:d:\backup\github calismalar\c++-programming-examples\arrays\arrangement-fillinginrandomnums\main.cpp
-	<iostream>
-	<conio.h>
-	<time.h>
-
