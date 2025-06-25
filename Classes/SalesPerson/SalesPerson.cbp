@@ -34,9 +34,9 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="include/sales_person.h" />
+		<Unit filename="include/salesperson.h" />
 		<Unit filename="main.cpp" />
-		<Unit filename="src/sales_person.cpp" />
+		<Unit filename="src/salesperson.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

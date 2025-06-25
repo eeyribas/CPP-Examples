@@ -1,13 +1,11 @@
 #include <iostream>
-#include <conio.h>
 #include <ctime>
+#include <conio.h>
 
 using namespace std;
 
 class StopWatch
 {
-	double begin, end;
-
 public:
 	StopWatch();
 	~StopWatch();
@@ -15,6 +13,9 @@ public:
 	void Start();
 	void Stop();
 	void Show();
+
+private:
+	double begin, end;
 };
 
 StopWatch::StopWatch()
@@ -41,16 +42,16 @@ void StopWatch::Stop()
 void StopWatch::Show()
 {
 	cout << "Time = " << end - begin;
-	cout << "\n";
+	cout << endl;
 }
 
 int main()
 {
-	StopWatch watch;
-	watch.Start();
-	for(int i = 0; i < 320000; i++);
-	watch.Stop();
-	watch.Show();
+	StopWatch sw;
+	sw.Start();
+	for (int i = 0; i < 320000; i++);
+	sw.Stop();
+	sw.Show();
 
 	getch();
 	return 0;

@@ -5,11 +5,13 @@
 
 class SquareClass
 {
-	int i;
-
 public:
 	SquareClass(int n);
+
 	int GetI();
+
+private:
+	int i;
 };
 
 #endif // SQUARE_H

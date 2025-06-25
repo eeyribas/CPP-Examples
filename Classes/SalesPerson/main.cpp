@@ -1,6 +1,6 @@
 #include <iostream>
 #include <conio.h>
-#include "sales_person.h"
+#include "salesperson.h"
 
 using namespace std;
 

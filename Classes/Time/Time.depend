@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1687274833 source:d:\github\duzenli\classes\time\main.cpp
-	<iostream>
-	<conio.h>
-	"timeclass.h"
-
-1687274853 d:\github\duzenli\classes\time\include\timeclass.h
-	<iostream>
-

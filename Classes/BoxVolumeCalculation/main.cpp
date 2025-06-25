@@ -23,6 +23,7 @@ Box::Box(double a, double b, double c)
 
 void Box::Volume()
 {
+    volume = l * w * h;
 	cout << "Volume = " << volume << "\n";
 }
 

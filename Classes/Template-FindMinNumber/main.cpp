@@ -3,10 +3,9 @@
 
 using namespace std;
 
-template <class X>
-X Min(X a, X b)
+template <class X> X Min(X a, X b)
 {
-	if(a <= b)
+	if (a <= b)
 		return a;
 	else
 		return b;

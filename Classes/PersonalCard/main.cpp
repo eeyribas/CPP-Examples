@@ -1,18 +1,19 @@
 #include <iostream>
-#include <conio.h>
 #include <cstring>
+#include <conio.h>
 
 using namespace std;
 
 class Card
 {
-	char title[80];
-	char person[40];
-	int number;
-
 public:
 	void Store(char *t, char *name, int num);
 	void Show();
+
+private:
+	char title[80];
+	char person[40];
+	int number;
 };
 
 void Card::Store(char *t, char *name, int num)
@@ -24,9 +25,9 @@ void Card::Store(char *t, char *name, int num)
 
 void Card::Show()
 {
-	cout << "Title = " << title << "\n";
-	cout << "Person name = " << person << "\n";
-	cout << "Number = " << number << "\n";
+	cout << "Title = " << title << endl;
+	cout << "Person name = " << person << endl;
+	cout << "Number = " << number << endl;
 }
 
 int main()

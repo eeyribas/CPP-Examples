@@ -4,19 +4,22 @@
 
 using namespace std;
 
-template <class CoordinaatType>class Coordinaat
+template <class CoordinaatType> class Coordinaat
 {
-	CoordinaatType x, y;
-
 public:
-	Coordinaat(CoordinaatType i, CoordinaatType j){
+	Coordinaat(CoordinaatType i, CoordinaatType j)
+	{
 		x = i;
 		y = j;
 	}
 
-	void Show(){
+	void Show()
+	{
 		cout << x << ", " << y << endl;
 	}
+
+private:
+	CoordinaatType x, y;
 };
 
 int main()

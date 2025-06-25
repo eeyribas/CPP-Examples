@@ -1,24 +1,25 @@
 #include <iostream>
-#include <conio.h>
 #include <cstring>
+#include <conio.h>
 
 using namespace std;
 
 class Dice
 {
-	int val;
-
 public:
-	void Roll(){
+	void Roll()
+	{
         val = (rand() % 6) + 1;
-        cout << val << "\n";
+        cout << val << endl;
 	}
+
+private:
+	int val;
 };
 
 int main()
 {
 	Dice one, two;
-
 	one.Roll();
 	two.Roll();
 	one.Roll();

@@ -1,7 +1,7 @@
 #include <iostream>
+#include <cmath>
 #include <conio.h>
 #include <square.h>
-#include <cmath>
 
 using namespace std;
 

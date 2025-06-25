@@ -1,36 +1,36 @@
 #include <iostream>
-#include <conio.h>
 #include <cstring>
+#include <conio.h>
 
 using namespace std;
 
 class Inventory
 {
-	char item[20];
-	double cost;
-	int on_hand;
-
 public:
-	Inventory(char *i, double c, int o){
+	Inventory(char *i, double c, int o)
+	{
 		strcpy(item, i);
 		cost = c;
 		on_hand = o;
 	}
 
-	void Show();
-};
+	void Show()
+    {
+        cout << item;
+        cout << " : $" << cost;
+        cout << " On hand : " << on_hand << "\n";
+    }
 
-void Inventory::Show()
-{
-	cout << item;
-	cout << ":$" << cost;
-	cout << " On hand : " << on_hand << "\n";
-}
+private:
+	char item[20];
+	double cost;
+	int on_hand;
+};
 
 int main()
 {
-	Inventory obj("wrench", 4.95, 4);
-	obj.Show();
+	Inventory inv("wrench", 4.95, 4);
+	inv.Show();
 
 	getch();
 	return 0;
