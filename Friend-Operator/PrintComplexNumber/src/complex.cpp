@@ -1,5 +1,5 @@
 #include "complex.h"
-#include<iostream>
+#include <iostream>
 
 using std::cout;
 
@@ -21,6 +21,7 @@ const Complex &Complex::operator=(const Complex &a)
 {
 	real = a.real;
 	imagery = a.imagery;
+
 	return *this;
 }
 

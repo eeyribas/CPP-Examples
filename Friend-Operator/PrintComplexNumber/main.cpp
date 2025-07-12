@@ -18,7 +18,7 @@ int main()
 	x = y + z;
 	cout << "\n\nx = y + z : \n";
 	x.Print();
-	cout << "=";
+	cout << " = ";
 	y.Print();
 	cout << " + ";
 	z.Print();
@@ -26,9 +26,9 @@ int main()
 	x = y - z;
 	cout << "x = y - z : ";
 	x.Print();
-	cout << "=";
+	cout << " = ";
 	y.Print();
-	cout << "-";
+	cout << " - ";
 	z.Print();
 	cout << endl;
 

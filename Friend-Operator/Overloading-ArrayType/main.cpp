@@ -7,25 +7,27 @@ const int size = 5;
 
 class ArrayType
 {
-	int a[size];
-
 public:
-	ArrayType(){
-		for(int i = 0; i < size; i++)
-			a[i] = i;
+	ArrayType()
+	{
+		for (int i = 0; i < size; i++)
+			arr[i] = i;
 	}
 
-	int operator[](int i){
-		return a[i];
+	int operator[](int i)
+	{
+		return arr[i];
 	}
+
+private:
+    int arr[size];
 };
 
 int main()
 {
-	ArrayType obj;
-
-	for(int i = 0; i < size; i++)
-		cout << obj[i] << " ";
+	ArrayType array_type;
+	for (int i = 0; i < size; i++)
+		cout << array_type[i] << " ";
 
 	getch();
 	return 0;

@@ -5,22 +5,23 @@ using namespace std;
 
 class ThreeD
 {
-	int x, y, z;
-
 public:
-    ThreeD(int i, int j, int k){
+    ThreeD(int i, int j, int k)
+    {
 		x = i;
 		y = j;
 		z = k;
 	}
 
-	ThreeD(){
+	ThreeD()
+	{
 		x = 0;
 		y = 0;
 		z = 0;
 	}
 
-	void Get(int &i, int &j, int &k){
+	void Get(int &i, int &j, int &k)
+	{
 		i = x;
 		j = y;
 		k = z;
@@ -30,26 +31,29 @@ public:
 	ThreeD operator-(ThreeD &obj);
 	friend ThreeD operator++(ThreeD &obj);
 	friend ThreeD operator--(ThreeD &obj);
+
+private:
+    int x, y, z;
 };
 
 ThreeD ThreeD::operator+(ThreeD &obj)
 {
-	ThreeD temp;
-	temp.x = x + obj.x;
-	temp.y = y + obj.y;
-	temp.z = z + obj.z;
+	ThreeD tmp;
+	tmp.x = x + obj.x;
+	tmp.y = y + obj.y;
+	tmp.z = z + obj.z;
 
-	return temp;
+	return tmp;
 }
 
 ThreeD ThreeD::operator-(ThreeD &obj)
 {
-	ThreeD temp;
-	temp.x = x - obj.x;
-	temp.y = y - obj.y;
-	temp.z = z - obj.z;
+	ThreeD tmp;
+	tmp.x = x - obj.x;
+	tmp.y = y - obj.y;
+	tmp.z = z - obj.z;
 
-	return temp;
+	return tmp;
 }
 
 ThreeD operator++(ThreeD &obj)

@@ -4,74 +4,77 @@
 
 using namespace std;
 
-class StrType
+class Str
 {
-	char s[80];
-
 public:
-	StrType(){
-		*s='\0';
+	Str()
+	{
+		*str = '\0';
 	}
 
-	StrType(char *p){
-		strcpy(s, p);
+	Str(char *p)
+	{
+		strcpy(str, p);
 	}
 
-	char *Get(){
-		return s;
+	char *Get()
+	{
+		return str;
 	}
 
-	StrType operator+(StrType str);
-	StrType operator=(StrType str);
-	int operator<(StrType str);
-	int operator>(StrType str);
-	int operator==(StrType str);
+	Str operator+(Str s);
+	Str operator=(Str s);
+	int operator<(Str s);
+	int operator>(Str s);
+	int operator==(Str s);
+
+private:
+    char str[80];
 };
 
-StrType StrType::operator+(StrType str)
+Str Str::operator+(Str s)
 {
-	StrType temp;
-	strcpy(temp.s, s);
-	strcat(temp.s, str.s);
+	Str tmp;
+	strcpy(tmp.str, str);
+	strcat(tmp.str, s.str);
 
-	return temp;
+	return tmp;
 }
 
-StrType StrType::operator=(StrType str)
+Str Str::operator=(Str s)
 {
-	strcpy(s, str.s);
+	strcpy(str, s.str);
 
 	return *this;
 }
 
-int StrType::operator<(StrType str)
+int Str::operator<(Str s)
 {
-	return strcmp(s, str.s) < 0;
+	return strcmp(str, s.str) < 0;
 }
 
-int StrType::operator>(StrType str)
+int Str::operator>(Str s)
 {
-	return strcmp(s, str.s) > 0;
+	return strcmp(str, s.str) > 0;
 }
 
-int StrType::operator==(StrType str)
+int Str::operator==(Str s)
 {
-	return strcmp(s, str.s) == 0;
+	return strcmp(str, s.str) == 0;
 }
 
 int main()
 {
-	StrType str_1("Hello"), str_2("There"), str_3;
-
+	Str str_1("Hello"), str_2("There"), str_3;
 	str_3 = str_1 + str_2;
 	cout << str_3.Get() << "\n";
-
 	str_3 = str_1;
-	if(str_1 == str_3)
+
+	if (str_1 == str_3)
 		cout << "str_1 == str_3\n";
-	if(str_1 > str_2)
+	if (str_1 > str_2)
 		cout << "str_1 > str_2\n";
-	if(str_1 < str_2)
+	if (str_1 < str_2)
 		cout << "str_1 < str_2\n";
 
 	getch();

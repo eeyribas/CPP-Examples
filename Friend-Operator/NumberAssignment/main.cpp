@@ -5,36 +5,35 @@ using namespace std;
 
 class Number
 {
-	friend void XAssignment(Number &, int);
-
 public:
-	Number(){
+	Number()
+	{
 		x = 0;
 	}
 
-	void Print() const{
+	void Print() const
+	{
 		cout << x << endl;
 	}
+
+    friend void Assignment(Number&, int);
 
 private:
 	int x;
 };
 
-
-void XAssignment(Number &c, int val)
+void Assignment(Number &num, int val)
 {
-	c.x = val;
+	num.x = val;
 }
 
 int main()
 {
 	Number num;
-
 	cout << "Firstly x = ";
 	num.Print();
-
 	cout << "X Assignment = ";
-	XAssignment(num, 8);
+	Assignment(num, 8);
 	num.Print();
 
 	getch();

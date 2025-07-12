@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1688890817 source:d:\backup\github calismalar\c++-programming-examples\friend-operator\printcomplexnumber\src\complex.cpp
-	"complex.h"
-	<iostream>
-
-1688890711 d:\backup\github calismalar\c++-programming-examples\friend-operator\printcomplexnumber\include\complex.h
-

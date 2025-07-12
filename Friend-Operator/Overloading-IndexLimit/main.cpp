@@ -8,35 +8,36 @@ const int size = 5;
 
 class ArrayType
 {
-	int a[size];
-
 public:
-	ArrayType(){
-		for(int i = 0; i < size; i++)
-			a[i] = i;
+	ArrayType()
+	{
+		for (int i = 0; i < size; i++)
+			arr[i] = i;
 	}
 
 	int &operator[](int i);
+
+private:
+    int arr[size];
 };
 
 int &ArrayType::operator[](int i)
 {
-	if(i < 0 || i > size - 1){
+	if (i < 0 || i > size - 1) {
 		cout << "\nIndex = ";
 		cout << i << " limit. Error.\n";
 		exit(1);
 	}
 
-	return a[i];
+	return arr[i];
 }
 
 int main()
 {
-	ArrayType obj;
-
-	for(int i = 0; i < size; i++)
-		cout << obj[i] << " ";
-	obj[size + 100] = 99;
+	ArrayType array_type;
+	for (int i = 0; i < size; i++)
+		cout << array_type[i] << " ";
+	array_type[size + 100] = 99;
 
 	getch();
 	return 0;
