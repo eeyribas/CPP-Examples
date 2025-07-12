@@ -1,25 +1,24 @@
 #include <iostream>
-#include <conio.h>
 #include <cstring>
+#include <conio.h>
 
 using namespace std;
 
-void RevStr(char *s)
+void RevStr(char *str)
 {
-	char temp[80];
+	char tmp[80];
 	int j;
+	for (int i = strlen(str) - 1, j = 0; i >= 0; i--, j++)
+		tmp[j] = str[i];
+	tmp[j] = '\0';
 
-	for(int i = strlen(s) - 1, j = 0; i >= 0; i--, j++)
-		temp[j] = s[i];
-	temp[j] = '\0';
-
-	strcpy(s, temp);
+	strcpy(str, tmp);
 }
 
 void RevStr(char *in, char *out)
 {
 	int j;
-	for(int i = strlen(in) - 1, j = 0; i >= 0; i--, j++)
+	for (int i = strlen(in) - 1, j = 0; i >= 0; i--, j++)
 		out[j] = in[i];
 	out[j] = '\0';
 }

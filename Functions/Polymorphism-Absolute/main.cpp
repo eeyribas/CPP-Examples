@@ -6,18 +6,21 @@ using namespace std;
 int Abs(int n)
 {
 	cout << "Integer abs()\n";
+
 	return n < 0 ? -n : n;
 }
 
 long Abs(long n)
 {
 	cout << "Long abs()\n";
+
 	return n < 0 ? -n : n;
 }
 
 double Abs(double n)
 {
 	cout << "Double abs()\n";
+
 	return n < 0 ? -n : n;
 }
 

@@ -15,7 +15,7 @@ double RectangleArea(double lenght)
 
 int main()
 {
-	cout << "10*5.8 rectangle area = " << RectangleArea(10, 5.8) << "\n";
+	cout << "10 * 5.8 rectangle area = " << RectangleArea(10, 5.8) << "\n";
 	cout << "10 rectangle area = " << RectangleArea(10) << "\n";
 
 	getch();
