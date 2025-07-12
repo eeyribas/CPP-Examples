@@ -21,8 +21,8 @@ Worker::Worker(const char *first, const char *last)
 Worker::~Worker()
 {
 	cout << "~Deconstructor : " << name << ' ' << surname << endl;
-	delete [] name;
-	delete [] surname;
+	delete[] name;
+	delete[] surname;
 	--number;
 }
 

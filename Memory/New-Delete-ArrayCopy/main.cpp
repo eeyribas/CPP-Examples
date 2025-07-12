@@ -1,48 +1,53 @@
 #include <iostream>
-#include <conio.h>
 #include <cstdlib>
+#include <conio.h>
 
 using namespace std;
 
 class Array
 {
-	int *p;
-	int size;
-
 public:
-	Array(int sz){
+	Array(int sz)
+	{
         p = new int[sz];
-		if(!p)
+		if (!p)
 			exit(1);
+
 		size = sz;
 		cout << "Constructor\n";
 	}
 
-	~Array(){
-		delete []p;
+	~Array()
+	{
+		delete[] p;
 	}
 
 	Array(const Array &sz);
 
-	void Put(int i, int j){
-		if(i >= 0 && i < size)
+	void Put(int i, int j)
+	{
+		if (i >= 0 && i < size)
 			p[i] = j;
 	}
 
-	int Get(int i){
+	int Get(int i)
+	{
 		return p[i];
 	}
+
+private:
+    int *p;
+	int size;
 };
 
 Array::Array(const Array &a)
 {
 	size = a.size;
 	p = new int[a.size];
-
-	if(!p)
+	if (!p)
 		exit(1);
 
-	for(int i = 0; i < a.size; i++)
+	for (int i = 0; i < a.size; i++)
 		p[i] = a.p[i];
 
 	cout << "Copy constructor.\n";
@@ -51,15 +56,13 @@ Array::Array(const Array &a)
 int main()
 {
 	Array num(10);
-
-	for(int i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 		num.Put(i, i);
-
-	for(int i = 9; i >= 0; i--)
+	for (int i = 9; i >= 0; i--)
 		cout << num.Get(i) << "\n";
 
 	Array x = num;
-	for(int i = 0; i < 10; i++)
+	for (int i = 0; i < 10; i++)
 		cout << x.Get(i) << "\n";
 
 	getch();

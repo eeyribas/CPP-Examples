@@ -10,6 +10,7 @@ class Worker
 public:
 	Worker(const char *, const char *);
 	~Worker();
+
 	const char *ReadName() const;
 	const char *ReadSurname() const;
 	static int ReadNumber();
@@ -17,6 +18,7 @@ public:
 private:
 	char *name;
 	char *surname;
+
 	static int number;
 };
 

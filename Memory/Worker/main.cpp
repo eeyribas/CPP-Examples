@@ -8,20 +8,20 @@ int main()
 {
 	cout << "Worker number : " << Worker::ReadNumber() << endl;
 
-	Worker *w1_ptr = new Worker("Susan", "Baker");
-	Worker *w2_ptr = new Worker("Robert", "Jones");
+	Worker *worker_1 = new Worker("Susan", "Baker");
+	Worker *worker_2 = new Worker("Robert", "Jones");
+	cout << "Worker Number : " << worker_1->ReadNumber();
+	cout << "\n\n1 - Worker : " << worker_1->ReadName()
+         << " " << worker_1->ReadSurname()
+         << "\n2 - Worker : " << worker_2->ReadName()
+		 << " " << worker_2->ReadSurname() << "\n\n";
 
-	cout << "Worker Number : " << w1_ptr->ReadNumber();
-	cout << "\n\n1-Worker : " << w1_ptr->ReadName() << " " <<
-		w1_ptr->ReadSurname() << "\n2-Worker : " << w2_ptr->ReadName()
-		<< " " << w2_ptr->ReadSurname() << "\n\n";
-
-	delete w1_ptr;
-	w1_ptr = 0;
-	delete w2_ptr;
-	w2_ptr = 0;
-
-	cout << "Number of employees after deletion : " << Worker::ReadNumber() << endl;
+	delete worker_1;
+	worker_1 = 0;
+	delete worker_2;
+	worker_2 = 0;
+	cout << "Number of employees after deletion : "
+         << Worker::ReadNumber() << endl;
 
 	getch();
 	return 0;

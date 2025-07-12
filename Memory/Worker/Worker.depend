@@ -1,9 +1,0 @@
-# depslib dependency file v1.0
-1691342090 source:d:\backup\github calismalar\c++-programming-examples\memory\worker\src\worker.cpp
-	"worker.h"
-	<cstring>
-	<cassert>
-
-1691341845 d:\backup\github calismalar\c++-programming-examples\memory\worker\include\worker.h
-	<iostream>
-

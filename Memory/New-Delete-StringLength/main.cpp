@@ -1,49 +1,52 @@
 #include <iostream>
-#include <conio.h>
 #include <cstring>
 #include <cstdlib>
+#include <conio.h>
 
 using namespace std;
 
-class StrType
+class Str
 {
-	char *p;
-
 public:
-	StrType(char *s);
-	StrType(const StrType &a);
-
-	~StrType(){
-		delete []p;
+	Str(char *s);
+	Str(const Str &a);
+	~Str()
+	{
+		delete[] p;
 	}
 
-	char *Get(){
+	char *Get()
+	{
 		return p;
 	}
+
+private:
+    char *p;
 };
 
-StrType::StrType(char *s)
+Str::Str(char *s)
 {
 	int l = strlen(s) + 1;
 	p = new char[l];
-	if(!p){
+	if (!p) {
 		cout << "Alloction error.\n";
 		exit(1);
 	}
+
 	strcpy(p, s);
 }
 
-StrType::StrType(const StrType &a)
+Str::Str(const Str &a)
 {
 	int l = strlen(a.p) + 1;
 	p = new char[l];
-	if(!p)
+	if (!p)
 		exit(1);
 
 	strcpy(p, a.p);
 }
 
-void Show(StrType x)
+void Show(Str x)
 {
 	char *s = x.Get();
 	cout << s << "\n";
@@ -51,7 +54,7 @@ void Show(StrType x)
 
 int main()
 {
-	StrType a("Hello"), b("There");
+	Str a("Hello"), b("There");
 	Show(a);
 	Show(b);
 
