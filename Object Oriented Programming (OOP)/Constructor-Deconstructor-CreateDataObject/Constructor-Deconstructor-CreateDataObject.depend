@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1691858336 source:d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\constructor-deconstructor-createdataobject\src\data.cpp
-	"data.h"
-
-1691858240 d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\constructor-deconstructor-createdataobject\include\data.h
-	<iostream>
-
