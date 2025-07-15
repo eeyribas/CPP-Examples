@@ -5,13 +5,13 @@ using namespace std;
 
 void Space(int count)
 {
-    for(; count; count--)
+    for (; count; count--)
 		cout << ' ';
 }
 
 void Space(int count, char ch)
 {
-	for(; count; count--)
+	for (; count; count--)
 		cout << ch;
 }
 
@@ -25,7 +25,6 @@ int main()
 
 	fp_1(22);
 	cout << "\n";
-
 	fp_2(30, 'x');
 	cout << "\n";
 

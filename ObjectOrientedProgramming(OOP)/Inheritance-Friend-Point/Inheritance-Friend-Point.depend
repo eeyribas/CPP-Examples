@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1690753818 source:d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-friend-point\src\point.cpp
-	"point.h"
-
-1690753830 d:\backup\github calismalar\c++-programming-examples\object oriented programming (oop)\inheritance-friend-point\include\point.h
-	<iostream>
-

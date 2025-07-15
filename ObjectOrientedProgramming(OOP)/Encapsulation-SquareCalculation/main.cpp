@@ -1,37 +1,42 @@
 #include <iostream>
-#include <conio.h>
 #include <cmath>
+#include <conio.h>
 
 using namespace std;
 
 class SquareClass
 {
-	int i;
-
 public:
-	SquareClass(int n){
+	SquareClass(int n)
+	{
 		i = n;
 	}
 
-	void SetI(int n){
+	void SetI(int n)
+	{
         i = n;
 	}
 
-	int GetI(){
+	int GetI()
+	{
 		return i;
 	}
 
-	int Calc(){
+	int Calc()
+	{
 	    return sqrt(i);
 	}
+
+private:
+    int i;
 };
 
 int main()
 {
-	SquareClass a(10);
-	a.SetI(100);
-	cout << "A Value : " << a.GetI() << "\n";
-	cout << "Square : " << a.Calc();
+	SquareClass sq(10);
+	sq.SetI(100);
+	cout << "A Value : " << sq.GetI() << "\n";
+	cout << "Square : " << sq.Calc();
 
 	getch();
 	return 0;

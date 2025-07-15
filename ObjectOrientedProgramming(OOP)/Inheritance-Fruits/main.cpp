@@ -1,6 +1,6 @@
 #include <iostream>
-#include <conio.h>
 #include <cstring>
+#include <conio.h>
 
 using namespace std;
 
@@ -18,14 +18,13 @@ enum Color {
 
 void Out(enum Res x)
 {
-	if(x == no)
+	if (x == no)
         cout << "no\n";
     else
         cout << "yes\n";
 }
 
 char *c[] = {"red", "green", "yellow", "orange"};
-
 
 class Fruit
 {
@@ -38,16 +37,17 @@ public:
 	char name[40];
 };
 
-
 class Apple : public Fruit
 {
+public:
+	void SetA(char *n, enum Color c, enum Res ck,
+              enum Res crchy, enum Res e);
+	void Show();
+
+private:
     enum Res for_cook;
     enum Res for_water;
     enum Res for_food;
-
-public:
-	void SetA(char *n, enum Color c, enum Res ck, enum Res crchy, enum Res e);
-	void Show();
 };
 
 void Apple::SetA(char *n, enum Color c, enum Res ck, enum Res crchy, enum Res e)
@@ -84,16 +84,16 @@ void Apple::Show()
 	cout << "\n";
 }
 
-
 class Orange : public Fruit
 {
-	enum Res juice;
-	enum Res jam;
-	enum Res food;
-
 public:
 	void SetO(char *n, enum Color c, enum Res ck, enum Res clrc, enum Res e);
 	void Show();
+
+private:
+    enum Res juice;
+	enum Res jam;
+	enum Res food;
 };
 
 void Orange::SetO(char *n, enum Color c, enum Res ck, enum Res crchy, enum Res e)
@@ -129,7 +129,6 @@ void Orange::Show()
 	Out(food);
 	cout << "\n";
 }
-
 
 int main()
 {

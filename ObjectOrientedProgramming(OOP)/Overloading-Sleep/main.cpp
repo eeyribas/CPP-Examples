@@ -1,9 +1,9 @@
 #include <iostream>
 #include <conio.h>
 
-using namespace std;
-
 #define DELAY 100000
+
+using namespace std;
 
 void Sleep(int n);
 void Sleep(char *n);
@@ -22,13 +22,13 @@ int main()
 
 void Sleep(int n)
 {
-	for(; n; n--)
-		for(long i = 0; i < DELAY; i++);
+	for (; n; n--)
+		for (long i = 0; i < DELAY; i++);
 }
 
 void Sleep(char *n)
 {
 	int j = atoi(n);
-	for(; j; j--)
-		for(long i = 0; i < DELAY; i++);
+	for (; j; j--)
+		for (long i = 0; i < DELAY; i++);
 }
