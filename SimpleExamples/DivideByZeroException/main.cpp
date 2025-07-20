@@ -8,7 +8,8 @@ class DivideByZeroException
 public:
 	DivideByZeroException() : message("Zero division has been attempted"){}
 
-	const char *What() const{
+	const char *What() const
+	{
 		return message;
 	}
 
@@ -19,7 +20,7 @@ private:
 
 double Section(int part, int denominator)
 {
-	if(denominator == 0)
+	if (denominator == 0)
 		throw DivideByZeroException();
 
 	return static_cast<double>(part) / denominator;
@@ -31,10 +32,10 @@ int main()
     double result;
     cout << "Enter two integers (Make an end-of-file sign to exit)\n";
 
-    while(cin >> number_1 >> number_2){
-        try{
+    while (cin >> number_1 >> number_2) {
+        try {
             result = Section(number_1, number_2);
-            cout << " Section =: " << result << endl;
+            cout << " Section = " << result << endl;
         } catch(DivideByZeroException ex){
             cout << "No exception occurred: " << ex.What() << '\n';
         }

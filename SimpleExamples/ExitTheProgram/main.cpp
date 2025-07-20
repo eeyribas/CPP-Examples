@@ -8,10 +8,10 @@ int main()
 	char ch;
 	cout << "Press keys, press x to exit.\n";
 
-	do{
+	do {
 		cout << " ; ";
 		cin >> ch;
-	} while(ch != 'x');
+	} while (ch != 'x');
 
 	cout << "You find that you have exited the program." << endl;
 

@@ -6,7 +6,6 @@ using namespace std;
 int main()
 {
 	int wage, hour;
-
 	cout << "Enter sum hours = ";
 	cin >> hour;
 	cout << "Enter the hourly wage = ";

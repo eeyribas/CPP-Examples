@@ -10,8 +10,7 @@ int main()
 	int i;
 	cout << "Enter number = ";
 	cin >> i;
-
-	if(i % 2 == 0)
+	if (i % 2 == 0)
 		cout << "\nTwin." << endl;
 	else
 		cout << "\nSingle." << endl;

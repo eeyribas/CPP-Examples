@@ -13,7 +13,7 @@ int main()
 	cout << "First dice = " << a << endl;
 	cout << "\nSecond dice = " << b << endl;
 
-	if(a == b)
+	if (a == b)
         cout << "\nTwin!!!" << endl;
 	else
 		cout << "\nYou have assigned different values!!!" << endl;

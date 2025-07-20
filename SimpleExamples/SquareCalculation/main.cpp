@@ -1,6 +1,6 @@
 #include <iostream>
-#include <conio.h>
 #include <cmath>
+#include <conio.h>
 
 using namespace std;
 
@@ -24,10 +24,8 @@ double Square(double i)
 
 int main()
 {
-	cout << "90.34 = " << Square(90.34);
-	cout << "\n\n";
-	cout << "90L = " << Square(90L);
-	cout << "\n\n";
+	cout << "90.34 = " << Square(90.34) << "\n\n";
+	cout << "90L = " << Square(90L) << "\n\n";
 	cout << "90 = " << Square(90);
 
 	getch();

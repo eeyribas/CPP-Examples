@@ -10,15 +10,15 @@ int main()
 	int held = rand() % 10;
 	int thrown;
 
-	do{
+	do {
 		cout << "Enter number = ";
 		cin >> thrown;
 
-		if(thrown > held)
+		if (thrown > held)
             cout << thrown << "'smaller than" << endl;
-        else if(thrown < held)
+        else if (thrown < held)
             cout << thrown << "'bigger than" << endl;
-	} while(thrown != held);
+	} while (thrown != held);
 
 	cout << "Success!!!" << endl;
 
