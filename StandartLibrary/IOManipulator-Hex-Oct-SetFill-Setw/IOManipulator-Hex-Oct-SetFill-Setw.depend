@@ -1,6 +1,0 @@
-# depslib dependency file v1.0
-1690067530 source:d:\backup\github calismalar\c++-programming-examples\standartlibrary\iomanipulator-hex-oct-setfill-setw\main.cpp
-	<iostream>
-	<conio.h>
-	<iomanip>
-
